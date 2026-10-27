@@ -1,0 +1,2 @@
+# Optional starter dependency; task construction checked with this version.
+inspect-ai==0.3.285

@@ -1,0 +1,25 @@
+# Evaluation plan
+
+- Study title and owner:
+- Date and protocol version:
+- Research question and intended claim:
+- Target system and deployment context:
+- Relevant safety policy and excluded behaviors:
+- Model/checkpoint identifier and provider:
+- System prompt, tools, retrieval, permissions, and guardrails:
+- Upstream benchmark name, version/commit, citation, and data terms:
+- Dataset provenance, split strategy, languages, categories, and sample sizes:
+- Benign controls and unsafe contrasts:
+- Attacker goals, access, knowledge, and budget, if applicable:
+- Generation settings, repetitions, timeouts, and stopping rules:
+- Environment image, initialization, reset procedure, and network boundaries:
+- Scoring rubric and labels:
+- Human annotation, adjudication, and judge-calibration procedure:
+- Primary and secondary metrics with denominators:
+- Uncertainty method and unit of resampling:
+- Handling of errors, missing outputs, and failed environments:
+- Cost budget and abort criteria:
+- Planned comparisons, ablations, and held-out tests:
+- Logging, data redaction, and artifact retention:
+- Known limitations and claims this study cannot support:
+- Changes made after the pilot, with reasons:
