@@ -79,7 +79,7 @@ def main():
     if not errors:
         for path, expected in outputs().items():
             target = ROOT / path
-            if not target.exists() or target.read_bytes().decode('utf-8') != expected:
+            if not target.exists() or target.read_text(encoding='utf-8') != expected:
                 errors.append(f'{path}: generated content is out of date; run scripts/generate_catalog.py')
     for path in markdown_files():
         text = path.read_text(encoding='utf-8')
