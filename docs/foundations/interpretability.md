@@ -80,7 +80,14 @@ logits, activations = bridge.run_with_cache("The Eiffel Tower is in the city of"
 
 # What does the model predict next?
 print(bridge.to_string(logits[0, -1].argmax()))
+print(len(activations), "activations cached")
 ```
+
+When we ran this (TransformerLens 4.3.0), it printed `' London'` and `493 activations cached`.
+
+**GPT-2 small gets this wrong.** It's a tiny 2019 model, and it predicts London rather than Paris. That's a
+good first research question: *where* inside the model does the wrong answer come from? Every one of those
+493 cached activations is something you can inspect, patch, or ablate to find out.
 
 This uses the [TransformerLens](../toolkits/interpretability.md#r086) 4.x API from its README. Many older tutorials
 use `HookedTransformer.from_pretrained`, which was removed in version 4.0; see the

@@ -1,5 +1,18 @@
 # Validation record
 
+## Release 0.3.0 (October 30, 2026)
+
+- 10 new resources: paper IDs checked against the arXiv API; repositories, documentation sites, and
+  Hugging Face datasets checked to exist; Inspect Evals task names (`mask`, `sad_*`, `coconot`) checked against
+  the registry. Quickstarts were copied from upstream READMEs.
+- All courses, websites, and papers linked from the Foundations pages were checked to resolve (some sites, such as
+  ISO and OpenAI, block automated requests and were checked by hand).
+- The TransformerLens example on [Interpretability in depth](../foundations/interpretability.md) was run with
+  TransformerLens 4.3.0 on CPU. It printed `' London'` and `493 activations cached`, as shown on the page.
+  (On Windows, installing into a very deeply nested folder can hit the 260-character path limit; a normal
+  virtual environment is fine.)
+- `python scripts/validate.py` and `mkdocs build --strict` passed.
+
 ## Release 0.2.0 (October 30, 2026)
 
 **Catalogue links**
