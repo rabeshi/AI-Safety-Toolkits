@@ -7,11 +7,13 @@ labels: documentation
 
 **Resource name / existing ID:**
 
-**Official source URL:**
+**Paper URL:**
+
+**Official code / docs / dataset URLs:**
 
 **What it measures or supports:**
 
-**Type and suggested category:**
+**Type, suggested category, and evaluation methods:**
 
 **Audience and prerequisites:**
 

@@ -1,88 +1,95 @@
 # AI Safety Toolkit Hub
 
-**A practical guide to 82 AI safety benchmarks, datasets, evaluation frameworks, red-teaming tools, and research resources.**
+**Learn how AI systems are tested for safety, then do it yourself.**
 
-## Preamble: why this repository exists
+📖 **Read it as a website: <https://rabeshi.github.io/AI-Safety-Toolkits/>**
 
-AI safety evaluation can be difficult to enter. One project provides prompts, another runs tool-using agents, and another supplies a judge that decides whether a response was harmful. They may all be called “benchmarks,” although they answer different questions and require different skills.
+This hub is a beginner-friendly guide to AI safety evaluation. It explains the methods researchers use to test AI
+models and agents, walks you through hands-on tutorials, and catalogues 82 benchmarks, datasets, and tools, each
+with links to the **paper**, **code**, **docs**, and **data**.
 
-This repository helps you understand those differences, choose an appropriate resource, and turn an evaluation into evidence you can explain. It starts with plain-language concepts and small exercises, then progresses to reproducible experiments, adversarial testing, agent environments, and professional reporting.
+You don't need a machine-learning background. If you can run a Python script, you can follow along.
 
-The aim is to make the field easier to navigate without hiding its limitations. A high benchmark score is evidence about a particular test under particular conditions. It does not establish that a model or application is safe in every setting.
+## What's inside
 
-**Who it is for:** students and newcomers; researchers developing benchmarks; engineers evaluating applications; and experienced evaluators comparing methods or designing assessment campaigns.
-
-This is a curated learning and research hub. Each upstream project keeps its own implementation, requirements, terms, and scientific claims. The hub does not install or run all resources through a shared interface.
-
-## Choose your starting point
-
-| Your goal | Start here | What you will produce |
-| --- | --- | --- |
-| Understand the field | [Start here](docs/START_HERE.md) | A clear distinction between a benchmark, dataset, framework, and evaluator |
-| Learn through practice | [Beginner learning path](docs/LEARNING_PATHS.md) | A small annotated evaluation and a report |
-| Find a resource | [Full catalogue](CATALOG.md) | A shortlist matched to your research question |
-| Design a rigorous study | [Evaluation methodology](docs/METHODOLOGY.md) | A reproducible evaluation plan |
-| Interpret scores | [Metrics and reporting](docs/METRICS.md) | Separate measures of harmful compliance, over-refusal, utility, and uncertainty |
-| Follow the original 25 items | [Original-list mapping](docs/ORIGINAL_25.md) | Correct project identities and direct source links |
-| Add or update resources | [Contributing](CONTRIBUTING.md) | A source-backed catalogue entry |
-
-## A manageable first shortlist
-
-| Resource | Why start with it? |
+| Section | What you get |
 | --- | --- |
-| [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai) | Learn the anatomy of an evaluation: dataset, task, solver, scorer, and logs. |
-| [Inspect Evals](https://github.com/UKGovernmentBEIS/inspect_evals) | Study existing implementations instead of building every component from scratch. |
-| [XSTest](https://github.com/paul-rottger/xstest) | Understand why refusing a harmless request can also be an evaluation failure. |
-| [Do-Not-Answer](https://github.com/Libr-AI/do-not-answer) | Examine how a dataset defines requests a model should decline. |
-| [HarmBench](https://github.com/centerforaisafety/HarmBench) | Learn structured harmful-request evaluation and its threat-model assumptions. |
-| [AgentDojo](https://github.com/ethz-spylab/agentdojo) | Progress to tool use, untrusted content, and prompt injection. |
-| [AgentHarm](https://ukgovernmentbeis.github.io/inspect_evals/evals/agentharm/) | Compare harmful and benign multi-step agent tasks. |
+| [Getting started](docs/getting-started/index.md) | What an evaluation is, key vocabulary, setup guide, learning paths |
+| [Evaluation methods](docs/methods/index.md) | 15 plain-language guides: harmful requests and over-refusal, red teaming, prompt injection, agent safety, dangerous capabilities, alignment and propensity, AI control, interpretability, scoring and judges, bias, factuality, privacy, multimodal, holistic suites |
+| [Tutorials](docs/tutorials/index.md) | 6 step-by-step exercises, from scoring by hand (no installs) to testing an AI agent for prompt injection |
+| [Toolkit catalogue](CATALOG.md) | 82 resources with paper, code, docs, and dataset links; 34 have copy-paste quickstarts |
+| [Guides](docs/guides/choosing.md) | Choosing a resource, designing a rigorous study, metrics and reporting, templates |
 
-These are editorial learning recommendations, not a ranking of scientific quality or completeness. Read each upstream project's requirements before installing it.
+## Start in five minutes
 
-## What is included?
-
-- **82 distinct resources**, including all 25 items from the original list, with corrected identities where necessary.
-- Categorized descriptions, audience levels, limitations, direct primary-source links, and source-review dates.
-- Beginner, practitioner, and research learning paths; a glossary; selection guidance; and metric definitions.
-- A zero-dependency offline teaching exercise and an optional Inspect AI starter task.
-- Evaluation-plan, results-report, and resource-entry templates.
-- JSON and CSV exports, catalogue search, validation, optional link checking, and a GitHub Actions validation workflow.
-
-The catalogue includes adjacent resources on fairness, factuality, training data, and agent capability. These are labeled explicitly because they answer supporting questions rather than providing complete safety assessments.
-
-## Try it locally
-
-Python 3.10 or later is enough for the catalogue utilities and offline exercise. Run from the repository root:
+You only need Python 3.10 or newer for this first step.
 
 ```bash
-python scripts/catalog.py --level Beginner
-python scripts/catalog.py --query privacy
-python scripts/catalog.py --category "Prompt injection"
-python examples/offline_refusal_demo.py
-python scripts/validate.py
+git clone https://github.com/rabeshi/AI-Safety-Toolkits.git
+cd AI-Safety-Toolkits
+python examples/01_offline_refusal_demo.py
 ```
 
-The offline exercise uses fixed illustrative outputs. It does not query a model or produce benchmark results. For an optional real model call, follow [the Inspect starter guide](examples/README.md).
+This scores a tiny, invented refusal test by hand. It needs no model, account, or internet connection.
+[Tutorial 1](docs/tutorials/01-offline-refusal.md) explains every line.
 
-## Repository guide
+Then [set up Inspect AI](docs/getting-started/setup.md) (Python 3.11+) and continue with the other tutorials:
 
-| Location | Contents |
+| # | Tutorial | Code |
+| --- | --- | --- |
+| 1 | [Score an evaluation by hand](docs/tutorials/01-offline-refusal.md) | [`01_offline_refusal_demo.py`](examples/01_offline_refusal_demo.py) |
+| 2 | [Your first Inspect eval](docs/tutorials/02-first-inspect-eval.md) | [`02_first_inspect_eval.py`](examples/02_first_inspect_eval.py) |
+| 3 | [Run a real benchmark](docs/tutorials/03-run-a-benchmark.md) | one-line `inspect eval inspect_evals/...` commands |
+| 4 | [Build a refusal eval with an LLM judge](docs/tutorials/04-build-a-refusal-eval.md) | [`04_refusal_eval.py`](examples/04_refusal_eval.py) |
+| 5 | [Check your judge against humans](docs/tutorials/05-judge-agreement.md) | [`05_judge_agreement.py`](examples/05_judge_agreement.py) |
+| 6 | [Test an agent for prompt injection](docs/tutorials/06-prompt-injection.md) | [`06_prompt_injection.py`](examples/06_prompt_injection.py) |
+
+## Good first resources
+
+| Resource | Why start here | Links |
+| --- | --- | --- |
+| Inspect AI | Learn how an evaluation is built: dataset, solver, scorer, logs | [Code](https://github.com/UKGovernmentBEIS/inspect_ai) · [Docs](https://inspect.aisi.org.uk/) |
+| Inspect Evals | Run dozens of published benchmarks with one command | [Code](https://github.com/UKGovernmentBEIS/inspect_evals) · [Docs](https://ukgovernmentbeis.github.io/inspect_evals/) |
+| XSTest | See why refusing a *harmless* request is also a failure | [Paper](https://arxiv.org/abs/2308.01263) · [Code](https://github.com/paul-rottger/xstest) |
+| HarmBench | Standardised harmful-request testing and automated red teaming | [Paper](https://arxiv.org/abs/2402.04249) · [Code](https://github.com/centerforaisafety/HarmBench) |
+| AgentDojo | How tool-using agents get hijacked by injected instructions | [Paper](https://arxiv.org/abs/2406.13352) · [Code](https://github.com/ethz-spylab/agentdojo) |
+| AgentHarm | Compare harmful and harmless multi-step agent tasks | [Paper](https://arxiv.org/abs/2410.09024) · [Data](https://huggingface.co/datasets/ai-safety-institute/AgentHarm) |
+
+## Repository layout
+
+| Path | Contents |
 | --- | --- |
-| `CATALOG.md` | Categorized human-readable resource directory |
-| `data/resources.json` | Authoritative machine-readable catalogue |
-| `data/resources.csv` | CSV export for filtering in spreadsheet software |
-| `docs/` | Learning paths, methodology, metrics, glossary, provenance, and GitHub instructions |
-| `examples/` | Clearly labeled teaching examples |
-| `templates/` | Reusable evaluation and contribution templates |
-| `scripts/` | Catalogue search, generation, structural checks, and optional link checks |
+| `docs/` | The website's pages (Markdown) |
+| `examples/` | Tutorial code, all tested |
+| `data/resources.json` | The catalogue's single source of truth; `resources.csv` is an export |
+| `CATALOG.md` | The full catalogue as one GitHub-readable page (generated) |
+| `scripts/` | Generate pages from the JSON, validate, search, and check links |
+| `templates/` | Evaluation plan, results report, and resource-proposal templates |
 
-## Evidence, currency, and attribution
+Useful commands:
 
-Initial primary-source review: **October 27, 2026**. Source review establishes the identity and stated purpose of a resource; it does not certify installation, execution, maintenance, or scientific validity. No external benchmark was executed while assembling this hub.
+```bash
+python scripts/catalog.py --level Beginner          # search the catalogue from the terminal
+python scripts/catalog.py --method prompt-injection
+python scripts/generate_catalog.py                  # rebuild generated pages after editing the JSON
+python scripts/validate.py                          # check data, generated files, and links
+pip install -r requirements-docs.txt && mkdocs serve   # preview the website at http://127.0.0.1:8000
+```
 
-See [the validation record](docs/VALIDATION.md) for the catalogue and teaching-example checks completed for this release.
+## How much to trust this
 
-Descriptions and difficulty levels are editorial summaries. Difficulty describes expected prerequisites, not the severity of a risk. See [source provenance](docs/SOURCES.md), [scope and limitations](docs/SCOPE.md), and [the maintenance roadmap](docs/ROADMAP.md).
+- Paper, code, and dataset links were verified against arXiv, GitHub, and Hugging Face in October 2026.
+- The tutorials were run and tested ([validation record](docs/about/validation.md)).
+- Quickstart commands are copied from each project's documentation but were **not** run by this hub.
+- Descriptions and difficulty levels are editorial. A benchmark score is evidence about one test under specific
+  conditions, not proof that a system is safe.
 
-Credit the upstream authors when using their work. The MIT license covers this hub's original text, metadata, scripts, and examples; linked code, datasets, models, and papers retain their own licenses. No upstream benchmark datasets or source code are redistributed here.
+See [scope and limitations](docs/about/scope.md).
+
+## Contributing and licence
+
+Corrections and new resources are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+The MIT licence covers this hub's text, metadata, scripts, and examples. Linked code, datasets, models, and
+papers keep their own licences. No upstream benchmark data or code is redistributed here. Please cite the
+original authors when you use their work.

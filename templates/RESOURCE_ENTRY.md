@@ -1,9 +1,12 @@
 # Resource proposal
 
 - Name and stable ID for an update:
-- Official repository, documentation, or author paper URL:
+- Paper URL (arXiv abstract page if available):
+- Official code repository URL:
+- Documentation and dataset URLs, if any:
+- Quickstart command from the official docs, and where it came from:
 - Resource type:
-- Category and audience level:
+- Category, audience level, and evaluation methods (see the methods pages):
 - What behavior it measures or supports:
 - System boundary: model, application, or agent:
 - Required modalities, tools, environments, and access:

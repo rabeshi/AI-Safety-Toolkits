@@ -14,7 +14,20 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/OpenSafetyLab/SALAD-BENCH/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2402.05044",
+    "code_url": "https://github.com/OpenSafetyLab/SALAD-BENCH",
+    "docs_url": null,
+    "dataset_url": "https://huggingface.co/datasets/OpenSafetyLab/Salad-Data",
+    "quickstart": {
+      "language": "python",
+      "code": "from datasets import load_dataset  # pip install datasets\n\nds = load_dataset('OpenSafetyLab/Salad-Data', 'base_set', split='train')\nprint(ds)\nprint(ds[0])",
+      "source": "Hugging Face dataset"
+    },
+    "methods": [
+      "harmful-requests",
+      "scoring"
+    ]
   },
   {
     "id": "R002",
@@ -31,7 +44,15 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/mdoumbouya/h4rm3l/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate to high (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2408.04811",
+    "code_url": "https://github.com/mdoumbouya/h4rm3l",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "red-teaming"
+    ]
   },
   {
     "id": "R003",
@@ -48,7 +69,16 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/NY1024/SafeBench/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate to high (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2410.18927",
+    "code_url": "https://github.com/NY1024/SafeBench",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "multimodal",
+      "scoring"
+    ]
   },
   {
     "id": "R004",
@@ -65,7 +95,15 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/thu-coai/Agent-SafetyBench/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2412.14470",
+    "code_url": "https://github.com/thu-coai/Agent-SafetyBench",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "agent-safety"
+    ]
   },
   {
     "id": "R005",
@@ -82,7 +120,15 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/MurrayTom/SG-Bench/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2410.21965",
+    "code_url": "https://github.com/MurrayTom/SG-Bench",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "harmful-requests"
+    ]
   },
   {
     "id": "R006",
@@ -99,7 +145,16 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/shengyin1224/SafeAgentBench/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate to high (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2412.13178",
+    "code_url": "https://github.com/shengyin1224/SafeAgentBench",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "agent-safety",
+      "multimodal"
+    ]
   },
   {
     "id": "R007",
@@ -116,7 +171,15 @@
     "reviewed_source_url": "https://arxiv.org/abs/2411.16736",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate to high (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2411.16736",
+    "code_url": null,
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "dangerous-capabilities"
+    ]
   },
   {
     "id": "R008",
@@ -133,7 +196,15 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/ryoungj/ToolEmu/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate to high (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2309.15817",
+    "code_url": "https://github.com/ryoungj/ToolEmu",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "agent-safety"
+    ]
   },
   {
     "id": "R009",
@@ -150,7 +221,16 @@
     "reviewed_source_url": "https://arxiv.org/abs/2410.17401",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate to high (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2410.17401",
+    "code_url": "https://github.com/AI-secure/AdvAgent",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "prompt-injection",
+      "red-teaming"
+    ]
   },
   {
     "id": "R010",
@@ -167,7 +247,16 @@
     "reviewed_source_url": "https://arxiv.org/abs/2410.13886",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate to high (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2410.13886",
+    "code_url": "https://github.com/scaleapi/browser-art",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "agent-safety",
+      "red-teaming"
+    ]
   },
   {
     "id": "R011",
@@ -184,7 +273,16 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/AI-secure/RedCode/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate to high (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2411.07781",
+    "code_url": "https://github.com/AI-secure/RedCode",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "agent-safety",
+      "dangerous-capabilities"
+    ]
   },
   {
     "id": "R012",
@@ -201,7 +299,15 @@
     "reviewed_source_url": "https://arxiv.org/abs/2410.09006",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate to high (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2410.09006",
+    "code_url": null,
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "agent-safety"
+    ]
   },
   {
     "id": "R013",
@@ -218,7 +324,16 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/SALT-NLP/PrivacyLens/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2409.00138",
+    "code_url": "https://github.com/SALT-NLP/PrivacyLens",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "agent-safety",
+      "privacy"
+    ]
   },
   {
     "id": "R014",
@@ -235,7 +350,16 @@
     "reviewed_source_url": "https://arxiv.org/abs/2406.12814",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate to high (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2406.12814",
+    "code_url": "https://github.com/ChenWu98/agent-attack",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "multimodal",
+      "prompt-injection"
+    ]
   },
   {
     "id": "R015",
@@ -252,7 +376,15 @@
     "reviewed_source_url": "https://arxiv.org/abs/2501.10114",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2501.10114",
+    "code_url": null,
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "agent-safety"
+    ]
   },
   {
     "id": "R016",
@@ -269,7 +401,16 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/Lordog/R-Judge/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2401.10019",
+    "code_url": "https://github.com/Lordog/R-Judge",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "agent-safety",
+      "scoring"
+    ]
   },
   {
     "id": "R017",
@@ -286,7 +427,16 @@
     "reviewed_source_url": "https://arxiv.org/abs/2402.10196",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate to high (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2402.10196",
+    "code_url": null,
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "agent-safety",
+      "prompt-injection"
+    ]
   },
   {
     "id": "R018",
@@ -303,7 +453,20 @@
     "reviewed_source_url": "https://ukgovernmentbeis.github.io/inspect_evals/evals/agentharm/",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2410.09024",
+    "code_url": "https://github.com/UKGovernmentBEIS/inspect_evals/tree/main/src/inspect_evals/agentharm",
+    "docs_url": null,
+    "dataset_url": "https://huggingface.co/datasets/ai-safety-institute/AgentHarm",
+    "quickstart": {
+      "language": "bash",
+      "code": "pip install inspect-ai inspect-evals\n# set INSPECT_EVAL_MODEL first (see the setup guide); some evals also call a grader model\ninspect eval inspect_evals/agentharm --limit 10\ninspect eval inspect_evals/agentharm_benign --limit 10\ninspect view   # browse the log in your web browser",
+      "source": "Inspect Evals"
+    },
+    "methods": [
+      "agent-safety",
+      "harmful-requests"
+    ]
   },
   {
     "id": "R019",
@@ -320,7 +483,15 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/allenai/wildteaming/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate to high (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2406.18510",
+    "code_url": "https://github.com/allenai/wildteaming",
+    "docs_url": null,
+    "dataset_url": "https://huggingface.co/datasets/allenai/wildjailbreak",
+    "quickstart": null,
+    "methods": [
+      "red-teaming"
+    ]
   },
   {
     "id": "R020",
@@ -337,7 +508,13 @@
     "reviewed_source_url": "https://safetyprompts.com/",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Low to moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2404.05399",
+    "code_url": null,
+    "docs_url": "https://safetyprompts.com/",
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": []
   },
   {
     "id": "R021",
@@ -354,7 +531,15 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/segev-shlomov/ST-WebAgentBench/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate to high (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2410.06703",
+    "code_url": "https://github.com/segev-shlomov/ST-WebAgentBench",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "agent-safety"
+    ]
   },
   {
     "id": "R022",
@@ -371,7 +556,15 @@
     "reviewed_source_url": "https://arxiv.org/abs/2412.04984",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate to high (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2412.04984",
+    "code_url": null,
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "alignment-propensity"
+    ]
   },
   {
     "id": "R023",
@@ -388,7 +581,15 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/McGill-NLP/safearena/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate to high (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2503.04957",
+    "code_url": "https://github.com/McGill-NLP/safearena",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "agent-safety"
+    ]
   },
   {
     "id": "R024",
@@ -405,7 +606,15 @@
     "reviewed_source_url": "https://arxiv.org/abs/2409.16427",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate to high (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2409.16427",
+    "code_url": "https://github.com/XuhuiZhou/HAICOSYSTEM",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "agent-safety"
+    ]
   },
   {
     "id": "R025",
@@ -422,7 +631,15 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/Open-Agent-Safety/OpenAgentSafety/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate to high (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2507.06134",
+    "code_url": "https://github.com/Open-Agent-Safety/OpenAgentSafety",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "agent-safety"
+    ]
   },
   {
     "id": "R026",
@@ -439,7 +656,19 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/UKGovernmentBEIS/inspect_ai/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Low to moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": null,
+    "code_url": "https://github.com/UKGovernmentBEIS/inspect_ai",
+    "docs_url": "https://inspect.aisi.org.uk/",
+    "dataset_url": null,
+    "quickstart": {
+      "language": "bash",
+      "source": "Inspect AI docs",
+      "code": "pip install inspect-ai\n# write a task file (see the \"Your first Inspect eval\" tutorial), then:\ninspect eval my_task.py --model openai/gpt-4o-mini\ninspect view"
+    },
+    "methods": [
+      "frameworks"
+    ]
   },
   {
     "id": "R027",
@@ -456,7 +685,19 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/UKGovernmentBEIS/inspect_evals/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Low to moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": null,
+    "code_url": "https://github.com/UKGovernmentBEIS/inspect_evals",
+    "docs_url": "https://ukgovernmentbeis.github.io/inspect_evals/",
+    "dataset_url": null,
+    "quickstart": {
+      "language": "bash",
+      "code": "pip install inspect-ai inspect-evals\n# set INSPECT_EVAL_MODEL first (see the setup guide); some evals also call a grader model\n# grades with openai/gpt-4o by default; change with -T scorer_model=<provider/model>\ninspect eval inspect_evals/xstest --limit 10                    # safe prompts (over-refusal)\ninspect eval inspect_evals/xstest -T subset=unsafe --limit 10   # unsafe contrasts\ninspect view   # browse the log in your web browser",
+      "source": "Inspect Evals"
+    },
+    "methods": [
+      "frameworks"
+    ]
   },
   {
     "id": "R028",
@@ -473,7 +714,19 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/EleutherAI/lm-evaluation-harness/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2405.14782",
+    "code_url": "https://github.com/EleutherAI/lm-evaluation-harness",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": {
+      "language": "bash",
+      "source": "lm-evaluation-harness README",
+      "code": "pip install lm-eval\n# runs a small open model locally on CPU; slow but free\nlm_eval --model hf --model_args pretrained=EleutherAI/pythia-160m \\\n    --tasks truthfulqa_mc2 --device cpu --limit 20"
+    },
+    "methods": [
+      "frameworks"
+    ]
   },
   {
     "id": "R029",
@@ -490,7 +743,16 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/stanford-crfm/helm/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2211.09110",
+    "code_url": "https://github.com/stanford-crfm/helm",
+    "docs_url": "https://crfm-helm.readthedocs.io/",
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "frameworks",
+      "holistic"
+    ]
   },
   {
     "id": "R030",
@@ -507,7 +769,19 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/microsoft/PyRIT/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2410.02828",
+    "code_url": "https://github.com/microsoft/PyRIT",
+    "docs_url": "https://azure.github.io/PyRIT/",
+    "dataset_url": null,
+    "quickstart": {
+      "language": "bash",
+      "source": "PyRIT docs",
+      "code": "pip install pyrit\n# then follow the getting-started notebooks in the PyRIT docs"
+    },
+    "methods": [
+      "red-teaming"
+    ]
   },
   {
     "id": "R031",
@@ -524,7 +798,19 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/NVIDIA/garak/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Low to moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2406.11036",
+    "code_url": "https://github.com/NVIDIA/garak",
+    "docs_url": "https://reference.garak.ai/",
+    "dataset_url": null,
+    "quickstart": {
+      "language": "bash",
+      "source": "garak README",
+      "code": "python -m pip install -U garak\n# scan a small local Hugging Face model with one probe family\npython -m garak --target_type huggingface --target_name gpt2 --spec probes.dan.Dan_11_0"
+    },
+    "methods": [
+      "red-teaming"
+    ]
   },
   {
     "id": "R032",
@@ -541,7 +827,20 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/promptfoo/promptfoo/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Low to moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": null,
+    "code_url": "https://github.com/promptfoo/promptfoo",
+    "docs_url": "https://www.promptfoo.dev/docs/red-team/",
+    "dataset_url": null,
+    "quickstart": {
+      "language": "bash",
+      "source": "promptfoo README",
+      "code": "npx promptfoo@latest init --example getting-started\ncd getting-started\nnpx promptfoo@latest eval\nnpx promptfoo@latest view"
+    },
+    "methods": [
+      "frameworks",
+      "red-teaming"
+    ]
   },
   {
     "id": "R033",
@@ -558,7 +857,15 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/Giskard-AI/giskard-oss/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": null,
+    "code_url": "https://github.com/Giskard-AI/giskard-oss",
+    "docs_url": "https://docs.giskard.ai/",
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "frameworks"
+    ]
   },
   {
     "id": "R034",
@@ -575,7 +882,19 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/confident-ai/deepeval/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Low to moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": null,
+    "code_url": "https://github.com/confident-ai/deepeval",
+    "docs_url": "https://deepeval.com/docs/getting-started",
+    "dataset_url": null,
+    "quickstart": {
+      "language": "bash",
+      "source": "DeepEval README",
+      "code": "pip install -U deepeval\ndeepeval test run test_my_app.py"
+    },
+    "methods": [
+      "frameworks"
+    ]
   },
   {
     "id": "R035",
@@ -592,7 +911,16 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/aiverify-foundation/moonshot/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": null,
+    "code_url": "https://github.com/aiverify-foundation/moonshot",
+    "docs_url": "https://aiverify-foundation.github.io/moonshot/",
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "frameworks",
+      "red-teaming"
+    ]
   },
   {
     "id": "R036",
@@ -609,7 +937,15 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/EasyJailbreak/EasyJailbreak/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate to high (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2403.12171",
+    "code_url": "https://github.com/EasyJailbreak/EasyJailbreak",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "red-teaming"
+    ]
   },
   {
     "id": "R037",
@@ -626,7 +962,16 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/ThuCCSLab/JailbreakEval/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2406.09321",
+    "code_url": "https://github.com/ThuCCSLab/JailbreakEval",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "red-teaming",
+      "scoring"
+    ]
   },
   {
     "id": "R038",
@@ -643,7 +988,16 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/centerforaisafety/HarmBench/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2402.04249",
+    "code_url": "https://github.com/centerforaisafety/HarmBench",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "harmful-requests",
+      "red-teaming"
+    ]
   },
   {
     "id": "R039",
@@ -660,7 +1014,20 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/JailbreakBench/jailbreakbench/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2404.01318",
+    "code_url": "https://github.com/JailbreakBench/jailbreakbench",
+    "docs_url": "https://jailbreakbench.github.io/",
+    "dataset_url": "https://huggingface.co/datasets/JailbreakBench/JBB-Behaviors",
+    "quickstart": {
+      "language": "python",
+      "source": "JailbreakBench README",
+      "code": "import jailbreakbench as jbb  # pip install jailbreakbench\n\ndataset = jbb.read_dataset()\nprint(dataset.behaviors[:5])"
+    },
+    "methods": [
+      "harmful-requests",
+      "red-teaming"
+    ]
   },
   {
     "id": "R040",
@@ -677,7 +1044,20 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/dsbowen/strong_reject/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2402.10260",
+    "code_url": "https://github.com/dsbowen/strong_reject",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": {
+      "language": "bash",
+      "code": "pip install inspect-ai inspect-evals\n# set INSPECT_EVAL_MODEL first (see the setup guide); some evals also call a grader model\ninspect eval inspect_evals/strong_reject --limit 10\ninspect view   # browse the log in your web browser",
+      "source": "Inspect Evals"
+    },
+    "methods": [
+      "harmful-requests",
+      "scoring"
+    ]
   },
   {
     "id": "R041",
@@ -694,7 +1074,15 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/SORRY-Bench/SORRY-Bench/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2406.14598",
+    "code_url": "https://github.com/SORRY-Bench/SORRY-Bench",
+    "docs_url": null,
+    "dataset_url": "https://huggingface.co/datasets/sorry-bench/sorry-bench-202406",
+    "quickstart": null,
+    "methods": [
+      "harmful-requests"
+    ]
   },
   {
     "id": "R042",
@@ -711,7 +1099,19 @@
     "reviewed_source_url": "https://github.com/paul-rottger/xstest",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Low to moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2308.01263",
+    "code_url": "https://github.com/paul-rottger/xstest",
+    "docs_url": null,
+    "dataset_url": "https://huggingface.co/datasets/Paul/XSTest",
+    "quickstart": {
+      "language": "bash",
+      "code": "pip install inspect-ai inspect-evals\n# set INSPECT_EVAL_MODEL first (see the setup guide); some evals also call a grader model\n# grades with openai/gpt-4o by default; change with -T scorer_model=<provider/model>\ninspect eval inspect_evals/xstest --limit 10                    # safe prompts (over-refusal)\ninspect eval inspect_evals/xstest -T subset=unsafe --limit 10   # unsafe contrasts\ninspect view   # browse the log in your web browser",
+      "source": "Inspect Evals"
+    },
+    "methods": [
+      "harmful-requests"
+    ]
   },
   {
     "id": "R043",
@@ -728,7 +1128,19 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/justincui03/or-bench/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Low to moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2405.20947",
+    "code_url": "https://github.com/justincui03/or-bench",
+    "docs_url": null,
+    "dataset_url": "https://huggingface.co/datasets/bench-llm/or-bench",
+    "quickstart": {
+      "language": "python",
+      "code": "from datasets import load_dataset  # pip install datasets\n\nds = load_dataset('bench-llm/or-bench', 'or-bench-hard-1k', split='train')\nprint(ds)\nprint(ds[0])",
+      "source": "Hugging Face dataset"
+    },
+    "methods": [
+      "harmful-requests"
+    ]
   },
   {
     "id": "R044",
@@ -745,7 +1157,19 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/Libr-AI/do-not-answer/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Low to moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2308.13387",
+    "code_url": "https://github.com/Libr-AI/do-not-answer",
+    "docs_url": null,
+    "dataset_url": "https://huggingface.co/datasets/LibrAI/do-not-answer",
+    "quickstart": {
+      "language": "python",
+      "code": "from datasets import load_dataset  # pip install datasets\n\nds = load_dataset('LibrAI/do-not-answer', split='train')\nprint(ds)\nprint(ds[0])",
+      "source": "Hugging Face dataset"
+    },
+    "methods": [
+      "harmful-requests"
+    ]
   },
   {
     "id": "R045",
@@ -762,7 +1186,20 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/thu-coai/SafetyBench/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Low to moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2309.07045",
+    "code_url": "https://github.com/thu-coai/SafetyBench",
+    "docs_url": null,
+    "dataset_url": "https://huggingface.co/datasets/thu-coai/SafetyBench",
+    "quickstart": {
+      "language": "python",
+      "code": "from datasets import load_dataset  # pip install datasets\n\nds = load_dataset('thu-coai/SafetyBench', 'test', split='en')\nprint(ds)\nprint(ds[0])",
+      "source": "Hugging Face dataset"
+    },
+    "methods": [
+      "harmful-requests",
+      "qa-benchmarks"
+    ]
   },
   {
     "id": "R046",
@@ -779,7 +1216,15 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/AI-secure/DecodingTrust/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2306.11698",
+    "code_url": "https://github.com/AI-secure/DecodingTrust",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "holistic"
+    ]
   },
   {
     "id": "R047",
@@ -796,7 +1241,15 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/HowieHwong/TrustLLM/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2401.05561",
+    "code_url": "https://github.com/HowieHwong/TrustLLM",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "holistic"
+    ]
   },
   {
     "id": "R048",
@@ -813,7 +1266,20 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/Babelscape/ALERT/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2404.08676",
+    "code_url": "https://github.com/Babelscape/ALERT",
+    "docs_url": null,
+    "dataset_url": "https://huggingface.co/datasets/Babelscape/ALERT",
+    "quickstart": {
+      "language": "python",
+      "code": "from datasets import load_dataset  # pip install datasets\n\nds = load_dataset('Babelscape/ALERT', 'alert', split='test')\nprint(ds)\nprint(ds[0])",
+      "source": "Hugging Face dataset"
+    },
+    "methods": [
+      "harmful-requests",
+      "red-teaming"
+    ]
   },
   {
     "id": "R049",
@@ -830,7 +1296,20 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/stanford-crfm/air-bench-2024/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2407.17436",
+    "code_url": "https://github.com/stanford-crfm/air-bench-2024",
+    "docs_url": null,
+    "dataset_url": "https://huggingface.co/datasets/stanford-crfm/air-bench-2024",
+    "quickstart": {
+      "language": "bash",
+      "code": "pip install inspect-ai inspect-evals\n# set INSPECT_EVAL_MODEL first (see the setup guide); some evals also call a grader model\ninspect eval inspect_evals/air_bench --limit 10\ninspect view   # browse the log in your web browser",
+      "source": "Inspect Evals"
+    },
+    "methods": [
+      "harmful-requests",
+      "holistic"
+    ]
   },
   {
     "id": "R050",
@@ -847,7 +1326,15 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/IS2Lab/S-Eval/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2405.14191",
+    "code_url": "https://github.com/IS2Lab/S-Eval",
+    "docs_url": null,
+    "dataset_url": "https://huggingface.co/datasets/IS2Lab/S-Eval",
+    "quickstart": null,
+    "methods": [
+      "harmful-requests"
+    ]
   },
   {
     "id": "R051",
@@ -864,7 +1351,19 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/PKU-Alignment/beavertails/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Low to moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2307.04657",
+    "code_url": "https://github.com/PKU-Alignment/beavertails",
+    "docs_url": null,
+    "dataset_url": "https://huggingface.co/datasets/PKU-Alignment/BeaverTails",
+    "quickstart": {
+      "language": "python",
+      "code": "from datasets import load_dataset  # pip install datasets\n\nds = load_dataset('PKU-Alignment/BeaverTails', split='30k_test')\nprint(ds)\nprint(ds[0])",
+      "source": "Hugging Face dataset"
+    },
+    "methods": [
+      "scoring"
+    ]
   },
   {
     "id": "R052",
@@ -881,7 +1380,17 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/PKU-Alignment/safe-rlhf/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2310.12773",
+    "code_url": "https://github.com/PKU-Alignment/safe-rlhf",
+    "docs_url": null,
+    "dataset_url": "https://huggingface.co/datasets/PKU-Alignment/PKU-SafeRLHF",
+    "quickstart": {
+      "language": "python",
+      "code": "from datasets import load_dataset  # pip install datasets\n\nds = load_dataset('PKU-Alignment/PKU-SafeRLHF', 'default', split='test')\nprint(ds)\nprint(ds[0])",
+      "source": "Hugging Face dataset"
+    },
+    "methods": []
   },
   {
     "id": "R053",
@@ -898,7 +1407,19 @@
     "reviewed_source_url": "https://huggingface.co/datasets/Anthropic/hh-rlhf",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Low to moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2204.05862",
+    "code_url": null,
+    "docs_url": null,
+    "dataset_url": "https://huggingface.co/datasets/Anthropic/hh-rlhf",
+    "quickstart": {
+      "language": "python",
+      "code": "from datasets import load_dataset  # pip install datasets\n\nds = load_dataset('Anthropic/hh-rlhf', split='test')\nprint(ds)\nprint(ds[0])",
+      "source": "Hugging Face dataset"
+    },
+    "methods": [
+      "red-teaming"
+    ]
   },
   {
     "id": "R054",
@@ -915,7 +1436,19 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/allenai/real-toxicity-prompts/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Low to moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2009.11462",
+    "code_url": "https://github.com/allenai/real-toxicity-prompts",
+    "docs_url": null,
+    "dataset_url": "https://huggingface.co/datasets/allenai/real-toxicity-prompts",
+    "quickstart": {
+      "language": "python",
+      "code": "from datasets import load_dataset  # pip install datasets\n\nds = load_dataset('allenai/real-toxicity-prompts', split='train')\nprint(ds)\nprint(ds[0])",
+      "source": "Hugging Face dataset"
+    },
+    "methods": [
+      "bias-toxicity"
+    ]
   },
   {
     "id": "R055",
@@ -932,7 +1465,15 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/microsoft/TOXIGEN/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2203.09509",
+    "code_url": "https://github.com/microsoft/TOXIGEN",
+    "docs_url": null,
+    "dataset_url": "https://huggingface.co/datasets/toxigen/toxigen-data",
+    "quickstart": null,
+    "methods": [
+      "bias-toxicity"
+    ]
   },
   {
     "id": "R056",
@@ -949,7 +1490,20 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/nyu-mll/BBQ/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Low to moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2110.08193",
+    "code_url": "https://github.com/nyu-mll/BBQ",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": {
+      "language": "bash",
+      "code": "pip install inspect-ai inspect-evals\n# set INSPECT_EVAL_MODEL first (see the setup guide); some evals also call a grader model\ninspect eval inspect_evals/bbq --limit 10\ninspect view   # browse the log in your web browser",
+      "source": "Inspect Evals"
+    },
+    "methods": [
+      "bias-toxicity",
+      "qa-benchmarks"
+    ]
   },
   {
     "id": "R057",
@@ -966,7 +1520,19 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/amazon-science/bold/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2101.11718",
+    "code_url": "https://github.com/amazon-science/bold",
+    "docs_url": null,
+    "dataset_url": "https://huggingface.co/datasets/AmazonScience/bold",
+    "quickstart": {
+      "language": "bash",
+      "code": "pip install inspect-ai inspect-evals\n# set INSPECT_EVAL_MODEL first (see the setup guide); some evals also call a grader model\ninspect eval inspect_evals/bold --limit 10\ninspect view   # browse the log in your web browser",
+      "source": "Inspect Evals"
+    },
+    "methods": [
+      "bias-toxicity"
+    ]
   },
   {
     "id": "R058",
@@ -983,7 +1549,15 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/nyu-mll/crows-pairs/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2010.00133",
+    "code_url": "https://github.com/nyu-mll/crows-pairs",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "bias-toxicity"
+    ]
   },
   {
     "id": "R059",
@@ -1000,7 +1574,19 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/moinnadeem/StereoSet/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2004.09456",
+    "code_url": "https://github.com/moinnadeem/StereoSet",
+    "docs_url": null,
+    "dataset_url": "https://huggingface.co/datasets/McGill-NLP/stereoset",
+    "quickstart": {
+      "language": "bash",
+      "code": "pip install inspect-ai inspect-evals\n# set INSPECT_EVAL_MODEL first (see the setup guide); some evals also call a grader model\ninspect eval inspect_evals/stereoset --limit 10\ninspect view   # browse the log in your web browser",
+      "source": "Inspect Evals"
+    },
+    "methods": [
+      "bias-toxicity"
+    ]
   },
   {
     "id": "R060",
@@ -1017,7 +1603,20 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/sylinrl/TruthfulQA/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Low to moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2109.07958",
+    "code_url": "https://github.com/sylinrl/TruthfulQA",
+    "docs_url": null,
+    "dataset_url": "https://huggingface.co/datasets/truthfulqa/truthful_qa",
+    "quickstart": {
+      "language": "bash",
+      "code": "pip install inspect-ai inspect-evals\n# set INSPECT_EVAL_MODEL first (see the setup guide); some evals also call a grader model\ninspect eval inspect_evals/truthfulqa --limit 10\ninspect view   # browse the log in your web browser",
+      "source": "Inspect Evals"
+    },
+    "methods": [
+      "factuality",
+      "qa-benchmarks"
+    ]
   },
   {
     "id": "R061",
@@ -1034,7 +1633,20 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/openai/simple-evals/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Low to moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2411.04368",
+    "code_url": "https://github.com/openai/simple-evals",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": {
+      "language": "bash",
+      "code": "pip install inspect-ai inspect-evals\n# set INSPECT_EVAL_MODEL first (see the setup guide); some evals also call a grader model\ninspect eval inspect_evals/simpleqa --limit 10\ninspect view   # browse the log in your web browser",
+      "source": "Inspect Evals"
+    },
+    "methods": [
+      "factuality",
+      "qa-benchmarks"
+    ]
   },
   {
     "id": "R062",
@@ -1051,7 +1663,19 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/RUCAIBox/HaluEval/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2305.11747",
+    "code_url": "https://github.com/RUCAIBox/HaluEval",
+    "docs_url": null,
+    "dataset_url": "https://huggingface.co/datasets/pminervini/HaluEval",
+    "quickstart": {
+      "language": "python",
+      "code": "from datasets import load_dataset  # pip install datasets\n\nds = load_dataset('pminervini/HaluEval', 'qa', split='data')\nprint(ds)\nprint(ds[0])",
+      "source": "Hugging Face dataset"
+    },
+    "methods": [
+      "factuality"
+    ]
   },
   {
     "id": "R063",
@@ -1068,7 +1692,20 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/centerforaisafety/wmdp/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate to high (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2403.03218",
+    "code_url": "https://github.com/centerforaisafety/wmdp",
+    "docs_url": null,
+    "dataset_url": "https://huggingface.co/datasets/cais/wmdp",
+    "quickstart": {
+      "language": "bash",
+      "code": "pip install inspect-ai inspect-evals\n# set INSPECT_EVAL_MODEL first (see the setup guide); some evals also call a grader model\ninspect eval inspect_evals/wmdp_bio --limit 10\ninspect eval inspect_evals/wmdp_chem --limit 10\ninspect eval inspect_evals/wmdp_cyber --limit 10\ninspect view   # browse the log in your web browser",
+      "source": "Inspect Evals"
+    },
+    "methods": [
+      "dangerous-capabilities",
+      "qa-benchmarks"
+    ]
   },
   {
     "id": "R064",
@@ -1085,7 +1722,16 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/meta-llama/PurpleLlama/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate to high (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2312.04724",
+    "code_url": "https://github.com/meta-llama/PurpleLlama",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "dangerous-capabilities",
+      "prompt-injection"
+    ]
   },
   {
     "id": "R065",
@@ -1102,7 +1748,20 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/andyzorigin/cybench/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate to high (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2408.08926",
+    "code_url": "https://github.com/andyzorigin/cybench",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": {
+      "language": "bash",
+      "code": "pip install \"inspect-evals[cybench]\"\n# set INSPECT_EVAL_MODEL first (see the setup guide); some evals also call a grader model\n# Needs Docker running: the tasks execute inside sandbox containers.\ninspect eval inspect_evals/cybench --limit 10\ninspect view   # browse the log in your web browser",
+      "source": "Inspect Evals"
+    },
+    "methods": [
+      "agent-safety",
+      "dangerous-capabilities"
+    ]
   },
   {
     "id": "R066",
@@ -1119,7 +1778,20 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2406.13352",
+    "code_url": "https://github.com/ethz-spylab/agentdojo",
+    "docs_url": "https://agentdojo.spylab.ai/",
+    "dataset_url": null,
+    "quickstart": {
+      "language": "bash",
+      "code": "pip install \"inspect-evals[agentdojo]\"\n# set INSPECT_EVAL_MODEL first (see the setup guide); some evals also call a grader model\ninspect eval inspect_evals/agentdojo --limit 10\ninspect view   # browse the log in your web browser",
+      "source": "Inspect Evals"
+    },
+    "methods": [
+      "agent-safety",
+      "prompt-injection"
+    ]
   },
   {
     "id": "R067",
@@ -1136,7 +1808,16 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/uiuc-kang-lab/InjecAgent/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2403.02691",
+    "code_url": "https://github.com/uiuc-kang-lab/InjecAgent",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "agent-safety",
+      "prompt-injection"
+    ]
   },
   {
     "id": "R068",
@@ -1153,7 +1834,16 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/agiresearch/ASB/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate to high (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2410.02644",
+    "code_url": "https://github.com/agiresearch/ASB",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "agent-safety",
+      "prompt-injection"
+    ]
   },
   {
     "id": "R069",
@@ -1170,7 +1860,16 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/facebookresearch/wasp/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate to high (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2504.18575",
+    "code_url": "https://github.com/facebookresearch/wasp",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "agent-safety",
+      "prompt-injection"
+    ]
   },
   {
     "id": "R070",
@@ -1187,7 +1886,15 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/HumanCompatibleAI/tensor-trust/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2311.01011",
+    "code_url": "https://github.com/HumanCompatibleAI/tensor-trust",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "prompt-injection"
+    ]
   },
   {
     "id": "R071",
@@ -1204,7 +1911,15 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/microsoft/BIPIA/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2312.14197",
+    "code_url": "https://github.com/microsoft/BIPIA",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "prompt-injection"
+    ]
   },
   {
     "id": "R072",
@@ -1221,7 +1936,15 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/microsoft/llmail-inject-challenge/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate to high (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2506.09956",
+    "code_url": "https://github.com/microsoft/llmail-inject-challenge",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "prompt-injection"
+    ]
   },
   {
     "id": "R073",
@@ -1238,7 +1961,15 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/isXinLiu/MM-SafetyBench/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate to high (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2311.17600",
+    "code_url": "https://github.com/isXinLiu/MM-SafetyBench",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "multimodal"
+    ]
   },
   {
     "id": "R074",
@@ -1255,7 +1986,15 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/UCSB-AI/MSSBench/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate to high (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2410.06172",
+    "code_url": "https://github.com/UCSB-AI/MSSBench",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "multimodal"
+    ]
   },
   {
     "id": "R075",
@@ -1272,7 +2011,15 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/aypan17/machiavelli/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate to high (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2304.03279",
+    "code_url": "https://github.com/aypan17/machiavelli",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "alignment-propensity"
+    ]
   },
   {
     "id": "R076",
@@ -1289,7 +2036,19 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/anthropics/evals/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2212.09251",
+    "code_url": "https://github.com/anthropics/evals",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": {
+      "language": "bash",
+      "code": "pip install inspect-ai inspect-evals\n# set INSPECT_EVAL_MODEL first (see the setup guide); some evals also call a grader model\ninspect eval inspect_evals/sycophancy --limit 10\ninspect view   # browse the log in your web browser",
+      "source": "Inspect Evals"
+    },
+    "methods": [
+      "alignment-propensity"
+    ]
   },
   {
     "id": "R077",
@@ -1306,7 +2065,15 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/compl-ai/compl-ai/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate to high (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2410.07959",
+    "code_url": "https://github.com/compl-ai/compl-ai",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "holistic"
+    ]
   },
   {
     "id": "R078",
@@ -1323,7 +2090,13 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/xingjunm/Awesome-Large-Model-Safety/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Low to moderate (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2502.05206",
+    "code_url": "https://github.com/xingjunm/Awesome-Large-Model-Safety",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": []
   },
   {
     "id": "R079",
@@ -1340,7 +2113,15 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/web-arena-x/webarena/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate to high (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2307.13854",
+    "code_url": "https://github.com/web-arena-x/webarena",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "agent-safety"
+    ]
   },
   {
     "id": "R080",
@@ -1357,7 +2138,19 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/xlang-ai/OSWorld/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate to high (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2404.07972",
+    "code_url": "https://github.com/xlang-ai/OSWorld",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": {
+      "language": "bash",
+      "code": "pip install \"inspect-evals[osworld]\"\n# set INSPECT_EVAL_MODEL first (see the setup guide); some evals also call a grader model\n# Needs Docker running: the tasks execute inside sandbox containers.\ninspect eval inspect_evals/osworld_small --limit 10\ninspect view   # browse the log in your web browser",
+      "source": "Inspect Evals"
+    },
+    "methods": [
+      "agent-safety"
+    ]
   },
   {
     "id": "R081",
@@ -1374,7 +2167,19 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/THUDM/AgentBench/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate to high (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2308.03688",
+    "code_url": "https://github.com/THUDM/AgentBench",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": {
+      "language": "bash",
+      "code": "pip install inspect-ai inspect-evals\n# set INSPECT_EVAL_MODEL first (see the setup guide); some evals also call a grader model\n# Needs Docker running: the tasks execute inside sandbox containers.\ninspect eval inspect_evals/agent_bench_os --limit 10\ninspect view   # browse the log in your web browser",
+      "source": "Inspect Evals"
+    },
+    "methods": [
+      "agent-safety"
+    ]
   },
   {
     "id": "R082",
@@ -1391,6 +2196,19 @@
     "reviewed_source_url": "https://raw.githubusercontent.com/anthropic-experimental/agentic-misalignment/HEAD/README.md",
     "license_status": "Check upstream code and dataset licenses separately",
     "setup_effort": "Moderate to high (editorial estimate; varies by configuration)",
-    "execution_tested": false
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2510.05179",
+    "code_url": "https://github.com/anthropic-experimental/agentic-misalignment",
+    "docs_url": null,
+    "dataset_url": null,
+    "quickstart": {
+      "language": "bash",
+      "code": "pip install \"inspect-evals[agentic-misalignment]\"\n# set INSPECT_EVAL_MODEL first (see the setup guide); some evals also call a grader model\ninspect eval inspect_evals/agentic_misalignment --limit 10\ninspect view   # browse the log in your web browser",
+      "source": "Inspect Evals"
+    },
+    "methods": [
+      "agent-safety",
+      "alignment-propensity"
+    ]
   }
 ]

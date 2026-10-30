@@ -1,0 +1,3 @@
+# Packages for Tutorials 2-6. Versions are the ones the tutorials were tested with.
+inspect-ai==0.3.286
+inspect-evals==0.27.0

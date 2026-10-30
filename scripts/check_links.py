@@ -23,14 +23,15 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, default=Path('link-report.json'))
     args = parser.parse_args()
-    rows = json.loads((ROOT / 'data/resources.json').read_text())
-    urls = sorted({r['url'] for r in rows})
+    rows = json.loads((ROOT / 'data/resources.json').read_text(encoding='utf-8'))
+    fields = ['url', 'paper_url', 'code_url', 'docs_url', 'dataset_url']
+    urls = sorted({r[f] for r in rows for f in fields if r[f]})
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
         observations = list(pool.map(check, urls))
     result = {'checked_at': datetime.datetime.now(datetime.timezone.utc).isoformat(),
               'meaning': 'HTTP reachability only; errors can reflect rate limits or access restrictions.',
               'observations': observations}
-    args.output.write_text(json.dumps(result, indent=2) + '\n')
+    args.output.write_text(json.dumps(result, indent=2) + '\n', encoding='utf-8')
     review = sum(r['status'] != 200 for r in observations)
     print(f'{len(urls)} links checked; {review} need review. Report: {args.output}')
 
