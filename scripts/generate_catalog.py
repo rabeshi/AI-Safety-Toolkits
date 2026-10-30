@@ -167,7 +167,7 @@ def outputs():
                  quickstart=r['quickstart']['code'] if r['quickstart'] else '')
         flat.append(r)
     buffer = io.StringIO(newline='')
-    writer = csv.DictWriter(buffer, fieldnames=list(flat[0]))
+    writer = csv.DictWriter(buffer, fieldnames=list(flat[0]), lineterminator='\n')
     writer.writeheader()
     writer.writerows(flat)
     files['data/resources.csv'] = buffer.getvalue()
