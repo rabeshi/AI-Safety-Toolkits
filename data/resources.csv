@@ -198,3 +198,54 @@ R082,Agentic Misalignment,Specialized risk,Research toolkit,Advanced,Studies mis
 # set INSPECT_EVAL_MODEL first (see the setup guide); some evals also call a grader model
 inspect eval inspect_evals/agentic_misalignment --limit 10
 inspect view   # browse the log in your web browser",agent-safety;alignment-propensity
+R083,MASK,Trustworthiness,Benchmark,Intermediate,Separates honesty from accuracy by checking whether models contradict their own beliefs under pressure.,https://github.com/centerforaisafety/mask,Belief elicitation is itself imperfect; a measured lie depends on how the belief was elicited.,,2026-10-30,Source reviewed; execution not tested,https://raw.githubusercontent.com/centerforaisafety/mask/HEAD/README.md,Check upstream code and dataset licenses separately,Low to moderate (editorial estimate; varies by configuration),False,https://arxiv.org/abs/2503.03750,https://github.com/centerforaisafety/mask,https://www.mask-benchmark.ai/,https://huggingface.co/datasets/cais/MASK,"pip install inspect-ai inspect-evals
+# set INSPECT_EVAL_MODEL first (see the setup guide); some evals also call a grader model
+inspect eval inspect_evals/mask --limit 10
+inspect view   # browse the log in your web browser",alignment-propensity
+R084,Situational Awareness Dataset (SAD),Specialized risk,Benchmark,Advanced,Measures whether models know facts about themselves and can tell evaluation from deployment.,https://github.com/LRudL/sad,"Situational awareness is a capability, not a harm by itself; interpret it alongside propensity results.",,2026-10-30,Source reviewed; execution not tested,https://raw.githubusercontent.com/LRudL/sad/HEAD/README.md,Check upstream code and dataset licenses separately,Moderate (editorial estimate; varies by configuration),False,https://arxiv.org/abs/2407.04694,https://github.com/LRudL/sad,https://situational-awareness-dataset.org/,,"pip install inspect-ai inspect-evals
+# set INSPECT_EVAL_MODEL first (see the setup guide); some evals also call a grader model
+inspect eval inspect_evals/sad_stages_oversight --limit 10
+inspect eval inspect_evals/sad_influence --limit 10
+inspect view   # browse the log in your web browser",alignment-propensity
+R085,ControlArena,AI control,Framework,Advanced,"Runs AI control experiments: settings with benign main tasks and sabotage side tasks, plus monitors and protocols.",https://github.com/UKGovernmentBEIS/control-arena,Results depend heavily on the strength of the red-team attack policy and the chosen audit budget.,,2026-10-30,Source reviewed; execution not tested,https://raw.githubusercontent.com/UKGovernmentBEIS/control-arena/HEAD/README.md,Check upstream code and dataset licenses separately,Moderate to high; most settings need Docker (editorial estimate; varies by configuration),False,,https://github.com/UKGovernmentBEIS/control-arena,https://control-arena.aisi.org.uk/,,"pip install control-arena
+# most settings also need Docker for sandboxes; then follow the
+# defer-to-trusted example in the README or the ""Introduction to Control"" guide",ai-control
+R086,TransformerLens,Interpretability,Library,Intermediate,"Loads language models with hooks on every activation, for mechanistic interpretability research.",https://github.com/TransformerLensOrg/TransformerLens,Version 4.0 replaced the HookedTransformer loading API used by many older tutorials.,,2026-10-30,Source reviewed; execution not tested,https://raw.githubusercontent.com/TransformerLensOrg/TransformerLens/HEAD/README.md,Check upstream code and dataset licenses separately,Low for small models on CPU (editorial estimate; varies by configuration),False,,https://github.com/TransformerLensOrg/TransformerLens,https://transformerlensorg.github.io/TransformerLens/,,"# pip install transformer_lens
+from transformer_lens.model_bridge import TransformerBridge
+
+# Load a model (eg GPT-2 Small)
+bridge = TransformerBridge.boot_transformers(""gpt2"", device=""cpu"")
+
+# Run the model and get logits and activations
+logits, activations = bridge.run_with_cache(""Hello World"")",interpretability
+R087,nnsight,Interpretability,Library,Intermediate,Reads and edits the internals of PyTorch and Hugging Face models during a forward pass.,https://github.com/ndif-team/nnsight,"Editing activations shows what a component can influence, not necessarily what it normally does.",,2026-10-30,Source reviewed; execution not tested,https://raw.githubusercontent.com/ndif-team/nnsight/HEAD/README.md,Check upstream code and dataset licenses separately,Low for small models on CPU (editorial estimate; varies by configuration),False,https://arxiv.org/abs/2407.14561,https://github.com/ndif-team/nnsight,https://nnsight.net/,,"# pip install nnsight
+from nnsight import TransformersModel
+
+model = TransformersModel(""openai-community/gpt2"", dispatch=True)
+
+with model.trace(""The Eiffel Tower is in the city of""):
+    # read a hidden state (a [batch, seq, hidden] tensor)
+    hidden = model.transformer.h[6].output.save()
+    # keep the final logits
+    logits = model.output.logits.save()
+
+print(hidden.shape)
+print(logits.argmax(-1))  # next-token predictions",interpretability
+R088,SAELens,Interpretability,Library,Advanced,"Trains, loads, and analyses sparse autoencoders that split model activations into interpretable features.",https://github.com/decoderesearch/SAELens,Feature labels are interpretations; check them on held-out examples before relying on them.,,2026-10-30,Source reviewed; execution not tested,https://raw.githubusercontent.com/decoderesearch/SAELens/HEAD/README.md,Check upstream code and dataset licenses separately,Moderate; training needs a GPU (editorial estimate; varies by configuration),False,,https://github.com/decoderesearch/SAELens,https://decoderesearch.github.io/SAELens/,,,interpretability
+R089,Neuronpedia,Interpretability,Platform,Beginner,"A free website for browsing and searching sparse-autoencoder features of open models, no code needed.",https://neuronpedia.org/,Automatically generated feature explanations can be wrong or incomplete.,,2026-10-30,Source reviewed; execution not tested,https://raw.githubusercontent.com/hijohnnylin/neuronpedia/HEAD/README.md,Check upstream code and dataset licenses separately,None to browse (editorial estimate; varies by configuration),False,,https://github.com/hijohnnylin/neuronpedia,https://neuronpedia.org/,,,interpretability
+R090,WildGuard,Safety classifiers,Classifier and dataset,Intermediate,"Open classifier that labels prompt harmfulness, response harmfulness, and refusals.",https://github.com/allenai/wildguard,Classifier labels follow its training taxonomy; audit it on your own distribution.,,2026-10-30,Source reviewed; execution not tested,https://raw.githubusercontent.com/allenai/wildguard/HEAD/README.md,Check upstream code and dataset licenses separately,Moderate; a GPU is recommended (editorial estimate; varies by configuration),False,https://arxiv.org/abs/2406.18495,https://github.com/allenai/wildguard,,https://huggingface.co/datasets/allenai/wildguardmix,"# pip install wildguard
+from wildguard import load_wildguard
+
+if __name__ == '__main__':
+    wildguard = load_wildguard()
+    items = [
+        {""prompt"": ""How do I make a bomb?"", ""response"": ""Sorry, I can't help with that.""},
+        {""prompt"": ""What's the weather like today?""},
+    ]
+    for item, result in zip(items, wildguard.classify(items)):
+        print(item[""prompt""], result)",harmful-requests;scoring
+R091,Llama Guard,Safety classifiers,Classifier model,Intermediate,"Open model that classifies prompts and responses against a hazard taxonomy, for filtering or scoring.",https://github.com/meta-llama/PurpleLlama,Model weights are gated on Hugging Face; the taxonomy may not match your policy.,,2026-10-30,Source reviewed; execution not tested,https://raw.githubusercontent.com/meta-llama/PurpleLlama/HEAD/README.md,Check upstream code and dataset licenses separately,Moderate; a GPU is recommended (editorial estimate; varies by configuration),False,https://arxiv.org/abs/2312.06674,https://github.com/meta-llama/PurpleLlama,https://huggingface.co/meta-llama/Llama-Guard-3-8B,,,scoring
+R092,CoCoNot,Refusal calibration,Benchmark,Beginner,"Tests when models should not comply (incomplete, unsupported, or unsafe requests) and when they over-refuse.",https://github.com/allenai/noncompliance,Its noncompliance taxonomy is broader than safety; separate safety categories when reporting.,,2026-10-30,Source reviewed; execution not tested,https://raw.githubusercontent.com/allenai/noncompliance/HEAD/README.md,Check upstream code and dataset licenses separately,Low (editorial estimate; varies by configuration),False,https://arxiv.org/abs/2407.12043,https://github.com/allenai/noncompliance,,https://huggingface.co/datasets/allenai/coconot,"pip install inspect-ai inspect-evals
+# set INSPECT_EVAL_MODEL first (see the setup guide); some evals also call a grader model
+inspect eval inspect_evals/coconot --limit 10
+inspect view   # browse the log in your web browser",harmful-requests

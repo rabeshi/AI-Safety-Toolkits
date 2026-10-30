@@ -41,10 +41,17 @@ A control evaluation is a game between two teams:
 - **Unrealistic deployments.** The audit budget and task distribution should match the real setting.
 - **Confusing control with alignment.** Control limits damage; it doesn't make the model trustworthy.
 
-## Toolkits
+## Toolkits for this method
 
-There is no catalogue entry yet for this young field. Research groups such as Redwood Research publish
-control settings and code alongside their papers; start from the paper below.
+<!-- BEGIN toolkits:ai-control -->
+| Resource | What it does | Level | Links |
+| --- | --- | --- | --- |
+| [ControlArena](../toolkits/ai-control.md#r085) | Runs AI control experiments: settings with benign main tasks and sabotage side tasks, plus monitors and protocols. | 🔴 Advanced | [Code](https://github.com/UKGovernmentBEIS/control-arena) · [Docs](https://control-arena.aisi.org.uk/) |
+<!-- END toolkits -->
+
+ControlArena, from the UK AI Security Institute, is built on Inspect, so it will feel familiar after the
+[tutorials](../tutorials/index.md). Its [Introduction to Control](https://control-arena.aisi.org.uk/intro-to-control.html)
+guide is a good next read.
 
 ## Key papers
 

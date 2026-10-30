@@ -1,8 +1,8 @@
 # Resource catalogue
 
-**82 resources across 17 categories.** The same catalogue, with quickstarts and method guides, is on the documentation website (see the README).
+**92 resources across 20 categories.** The same catalogue, with quickstarts and method guides, is on the documentation website (see the README).
 
-Links were checked against primary sources on 2026-10-27. Quickstart commands are copied from each project's own documentation; this hub has not run them. Check upstream licences before using code or data.
+Links were checked against primary sources on 2026-10-30. Quickstart commands are copied from each project's own documentation; this hub has not run them. Check upstream licences before using code or data.
 
 Levels: 🟢 Beginner · 🟡 Intermediate · 🔴 Advanced (editorial estimates of prerequisites).
 
@@ -10,19 +10,22 @@ Levels: 🟢 Beginner · 🟡 Intermediate · 🔴 Advanced (editorial estimates
 - [Red teaming](#red-teaming) (6)
 - [Multimodal and embodied](#multimodal-and-embodied) (4)
 - [Tool-using agents](#tool-using-agents) (7)
-- [Specialized risk](#specialized-risk) (8)
+- [Specialized risk](#specialized-risk) (9)
 - [Web and GUI agents](#web-and-gui-agents) (6)
 - [Privacy](#privacy) (1)
 - [Governance and research](#governance-and-research) (2)
 - [Directories](#directories) (2)
 - [Evaluation infrastructure](#evaluation-infrastructure) (8)
-- [Refusal calibration](#refusal-calibration) (4)
-- [Trustworthiness](#trustworthiness) (3)
+- [Refusal calibration](#refusal-calibration) (5)
+- [Trustworthiness](#trustworthiness) (4)
 - [Alignment data](#alignment-data) (3)
 - [Bias and toxicity](#bias-and-toxicity) (6)
 - [Factuality and hallucination](#factuality-and-hallucination) (3)
 - [Prompt injection](#prompt-injection) (7)
 - [Capability controls](#capability-controls) (3)
+- [AI control](#ai-control) (1)
+- [Interpretability](#interpretability) (4)
+- [Safety classifiers](#safety-classifiers) (2)
 
 ## Content safety
 
@@ -82,6 +85,7 @@ Levels: 🟢 Beginner · 🟡 Intermediate · 🔴 Advanced (editorial estimates
 | R065 | **Cybench** | Benchmark | 🔴 Advanced | Evaluates cybersecurity task capabilities in controlled environments. Capability benchmark; task performance is not itself malicious intent. | [Paper](https://arxiv.org/abs/2408.08926)<br>[Code](https://github.com/andyzorigin/cybench) |
 | R075 | **MACHIAVELLI** | Benchmark | 🔴 Advanced | Evaluates harmful and power-seeking behavior in text-based decision environments. Game outcomes are proxies; compare reward and harm separately. | [Paper](https://arxiv.org/abs/2304.03279)<br>[Code](https://github.com/aypan17/machiavelli) |
 | R082 | **Agentic Misalignment** | Research toolkit | 🔴 Advanced | Studies misaligned behavior in controlled organizational scenarios. Designed stress tests; observed rates do not estimate deployment prevalence. | [Paper](https://arxiv.org/abs/2510.05179)<br>[Code](https://github.com/anthropic-experimental/agentic-misalignment) |
+| R084 | **Situational Awareness Dataset (SAD)** | Benchmark | 🔴 Advanced | Measures whether models know facts about themselves and can tell evaluation from deployment. Situational awareness is a capability, not a harm by itself; interpret it alongside propensity results. | [Paper](https://arxiv.org/abs/2407.04694)<br>[Code](https://github.com/LRudL/sad)<br>[Docs](https://situational-awareness-dataset.org/) |
 
 ## Web and GUI agents
 
@@ -135,6 +139,7 @@ Levels: 🟢 Beginner · 🟡 Intermediate · 🔴 Advanced (editorial estimates
 | R041 | **SORRY-Bench** | Benchmark | 🟡 Intermediate | Evaluates safety refusal across a structured harmful-request taxonomy. Refusal on harmful requests does not establish helpfulness on safe ones. | [Paper](https://arxiv.org/abs/2406.14598)<br>[Code](https://github.com/SORRY-Bench/SORRY-Bench)<br>[Data](https://huggingface.co/datasets/sorry-bench/sorry-bench-202406) |
 | R042 | **XSTest** | Benchmark | 🟢 Beginner | Tests exaggerated refusals on safe prompts with unsafe contrasts. A focused diagnostic suite rather than complete safety coverage. | [Paper](https://arxiv.org/abs/2308.01263)<br>[Code](https://github.com/paul-rottger/xstest)<br>[Data](https://huggingface.co/datasets/Paul/XSTest) |
 | R043 | **OR-Bench** | Benchmark | 🟢 Beginner | Evaluates over-refusal on benign prompts that appear sensitive. Pair with harmful-request tests to measure both error directions. | [Paper](https://arxiv.org/abs/2405.20947)<br>[Code](https://github.com/justincui03/or-bench)<br>[Data](https://huggingface.co/datasets/bench-llm/or-bench) |
+| R092 | **CoCoNot** | Benchmark | 🟢 Beginner | Tests when models should not comply (incomplete, unsupported, or unsafe requests) and when they over-refuse. Its noncompliance taxonomy is broader than safety; separate safety categories when reporting. | [Paper](https://arxiv.org/abs/2407.12043)<br>[Code](https://github.com/allenai/noncompliance)<br>[Data](https://huggingface.co/datasets/allenai/coconot) |
 
 ## Trustworthiness
 
@@ -143,6 +148,7 @@ Levels: 🟢 Beginner · 🟡 Intermediate · 🔴 Advanced (editorial estimates
 | R046 | **DecodingTrust** | Benchmark suite | 🟡 Intermediate | Evaluates multiple dimensions of language-model trustworthiness. Report individual dimensions rather than treating trust as one number. | [Paper](https://arxiv.org/abs/2306.11698)<br>[Code](https://github.com/AI-secure/DecodingTrust) |
 | R047 | **TrustLLM** | Benchmark suite | 🟡 Intermediate | Evaluates language models across several trustworthiness dimensions. Component metrics and underlying datasets have different interpretations. | [Paper](https://arxiv.org/abs/2401.05561)<br>[Code](https://github.com/HowieHwong/TrustLLM) |
 | R076 | **Sycophancy evaluations** | Evaluation collection | 🟡 Intermediate | Examines agreement with users at the expense of truthful judgment. Research evaluations; selected tasks do not cover every form of deception. | [Paper](https://arxiv.org/abs/2212.09251)<br>[Code](https://github.com/anthropics/evals) |
+| R083 | **MASK** | Benchmark | 🟡 Intermediate | Separates honesty from accuracy by checking whether models contradict their own beliefs under pressure. Belief elicitation is itself imperfect; a measured lie depends on how the belief was elicited. | [Paper](https://arxiv.org/abs/2503.03750)<br>[Code](https://github.com/centerforaisafety/mask)<br>[Docs](https://www.mask-benchmark.ai/)<br>[Data](https://huggingface.co/datasets/cais/MASK) |
 
 ## Alignment data
 
@@ -190,3 +196,25 @@ Levels: 🟢 Beginner · 🟡 Intermediate · 🔴 Advanced (editorial estimates
 | R079 | **WebArena** | Benchmark and environment | 🔴 Advanced | Provides realistic web tasks for measuring agent capability. Capability baseline; not a safety benchmark by itself. | [Paper](https://arxiv.org/abs/2307.13854)<br>[Code](https://github.com/web-arena-x/webarena) |
 | R080 | **OSWorld** | Benchmark and environment | 🔴 Advanced | Evaluates agents on computer-use tasks in operating systems. Capability baseline; requires isolated desktop environments. | [Paper](https://arxiv.org/abs/2404.07972)<br>[Code](https://github.com/xlang-ai/OSWorld) |
 | R081 | **AgentBench** | Benchmark | 🔴 Advanced | Evaluates language-model agents across interactive environments. Useful control for agent capability; does not establish safety. | [Paper](https://arxiv.org/abs/2308.03688)<br>[Code](https://github.com/THUDM/AgentBench) |
+
+## AI control
+
+| ID | Resource | Type | Level | What it does | Links |
+| --- | --- | --- | --- | --- | --- |
+| R085 | **ControlArena** | Framework | 🔴 Advanced | Runs AI control experiments: settings with benign main tasks and sabotage side tasks, plus monitors and protocols. Results depend heavily on the strength of the red-team attack policy and the chosen audit budget. | [Code](https://github.com/UKGovernmentBEIS/control-arena)<br>[Docs](https://control-arena.aisi.org.uk/) |
+
+## Interpretability
+
+| ID | Resource | Type | Level | What it does | Links |
+| --- | --- | --- | --- | --- | --- |
+| R086 | **TransformerLens** | Library | 🟡 Intermediate | Loads language models with hooks on every activation, for mechanistic interpretability research. Version 4.0 replaced the HookedTransformer loading API used by many older tutorials. | [Code](https://github.com/TransformerLensOrg/TransformerLens)<br>[Docs](https://transformerlensorg.github.io/TransformerLens/) |
+| R087 | **nnsight** | Library | 🟡 Intermediate | Reads and edits the internals of PyTorch and Hugging Face models during a forward pass. Editing activations shows what a component can influence, not necessarily what it normally does. | [Paper](https://arxiv.org/abs/2407.14561)<br>[Code](https://github.com/ndif-team/nnsight)<br>[Docs](https://nnsight.net/) |
+| R088 | **SAELens** | Library | 🔴 Advanced | Trains, loads, and analyses sparse autoencoders that split model activations into interpretable features. Feature labels are interpretations; check them on held-out examples before relying on them. | [Code](https://github.com/decoderesearch/SAELens)<br>[Docs](https://decoderesearch.github.io/SAELens/) |
+| R089 | **Neuronpedia** | Platform | 🟢 Beginner | A free website for browsing and searching sparse-autoencoder features of open models, no code needed. Automatically generated feature explanations can be wrong or incomplete. | [Code](https://github.com/hijohnnylin/neuronpedia)<br>[Docs](https://neuronpedia.org/) |
+
+## Safety classifiers
+
+| ID | Resource | Type | Level | What it does | Links |
+| --- | --- | --- | --- | --- | --- |
+| R090 | **WildGuard** | Classifier and dataset | 🟡 Intermediate | Open classifier that labels prompt harmfulness, response harmfulness, and refusals. Classifier labels follow its training taxonomy; audit it on your own distribution. | [Paper](https://arxiv.org/abs/2406.18495)<br>[Code](https://github.com/allenai/wildguard)<br>[Data](https://huggingface.co/datasets/allenai/wildguardmix) |
+| R091 | **Llama Guard** | Classifier model | 🟡 Intermediate | Open model that classifies prompts and responses against a hazard taxonomy, for filtering or scoring. Model weights are gated on Hugging Face; the taxonomy may not match your policy. | [Paper](https://arxiv.org/abs/2312.06674)<br>[Code](https://github.com/meta-llama/PurpleLlama)<br>[Docs](https://huggingface.co/meta-llama/Llama-Guard-3-8B) |

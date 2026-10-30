@@ -1,6 +1,6 @@
 # Specialized risk
 
-8 resources. Open **Quickstart** boxes for copy-paste commands from the upstream project.
+9 resources. Open **Quickstart** boxes for copy-paste commands from the upstream project.
 
 ### ChemSafetyBench { #r007 }
 
@@ -165,3 +165,30 @@ Studies misaligned behavior in controlled organizational scenarios.
     Designed stress tests; observed rates do not estimate deployment prevalence.
 
 <small>Setup effort: Moderate to high (editorial estimate; varies by configuration). Source reviewed; execution not tested (2026-10-27).</small>
+
+---
+
+### Situational Awareness Dataset (SAD) { #r084 }
+
+**Benchmark** · 🔴 Advanced · `R084`
+
+Measures whether models know facts about themselves and can tell evaluation from deployment.
+
+**Links:** [Paper](https://arxiv.org/abs/2407.04694) · [Code](https://github.com/LRudL/sad) · [Docs](https://situational-awareness-dataset.org/)
+
+**Evaluation methods:** [Alignment and propensity evaluations](../methods/alignment-propensity.md)
+
+??? example "Quickstart (Inspect Evals)"
+
+    ```bash
+    pip install inspect-ai inspect-evals
+    # set INSPECT_EVAL_MODEL first (see the setup guide); some evals also call a grader model
+    inspect eval inspect_evals/sad_stages_oversight --limit 10
+    inspect eval inspect_evals/sad_influence --limit 10
+    inspect view   # browse the log in your web browser
+    ```
+
+!!! warning "Keep in mind"
+    Situational awareness is a capability, not a harm by itself; interpret it alongside propensity results.
+
+<small>Setup effort: Moderate (editorial estimate; varies by configuration). Source reviewed; execution not tested (2026-10-30).</small>

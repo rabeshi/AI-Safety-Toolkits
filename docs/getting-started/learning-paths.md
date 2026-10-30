@@ -2,6 +2,10 @@
 
 Pick the path that matches you. You don't need to finish every step, and you can read any method guide at any time.
 
+!!! tip "Learning AI safety as a whole?"
+    These paths focus on evaluation. For the wider field (risks, alignment theory, safety training,
+    interpretability, and governance), start with the [study roadmap](../foundations/index.md).
+
 ## Beginner: learn the evaluation loop (about 2 weeks, part-time)
 
 | Step | Read | Do | You're done when you can… |

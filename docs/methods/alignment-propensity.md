@@ -57,10 +57,12 @@ signs of such behaviour in controlled settings.
 <!-- BEGIN toolkits:alignment-propensity -->
 | Resource | What it does | Level | Links |
 | --- | --- | --- | --- |
+| [MASK](../toolkits/trustworthiness.md#r083) | Separates honesty from accuracy by checking whether models contradict their own beliefs under pressure. | 🟡 Intermediate | [Paper](https://arxiv.org/abs/2503.03750) · [Code](https://github.com/centerforaisafety/mask) · [Docs](https://www.mask-benchmark.ai/) · [Data](https://huggingface.co/datasets/cais/MASK) |
 | [Sycophancy evaluations](../toolkits/trustworthiness.md#r076) | Examines agreement with users at the expense of truthful judgment. | 🟡 Intermediate | [Paper](https://arxiv.org/abs/2212.09251) · [Code](https://github.com/anthropics/evals) |
 | [Agentic Misalignment](../toolkits/specialized-risk.md#r082) | Studies misaligned behavior in controlled organizational scenarios. | 🔴 Advanced | [Paper](https://arxiv.org/abs/2510.05179) · [Code](https://github.com/anthropic-experimental/agentic-misalignment) |
 | [Frontier Models are Capable of In-context Scheming](../toolkits/specialized-risk.md#r022) | Investigates strategic deceptive behavior in controlled scenarios. | 🔴 Advanced | [Paper](https://arxiv.org/abs/2412.04984) |
 | [MACHIAVELLI](../toolkits/specialized-risk.md#r075) | Evaluates harmful and power-seeking behavior in text-based decision environments. | 🔴 Advanced | [Paper](https://arxiv.org/abs/2304.03279) · [Code](https://github.com/aypan17/machiavelli) |
+| [Situational Awareness Dataset (SAD)](../toolkits/specialized-risk.md#r084) | Measures whether models know facts about themselves and can tell evaluation from deployment. | 🔴 Advanced | [Paper](https://arxiv.org/abs/2407.04694) · [Code](https://github.com/LRudL/sad) · [Docs](https://situational-awareness-dataset.org/) |
 <!-- END toolkits -->
 
 Inspect Evals also includes `mask` (honesty), `sad` (situational awareness), `instrumentaleval`, `gdm_stealth`,

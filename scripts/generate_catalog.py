@@ -23,6 +23,8 @@ METHODS = {
     'agent-safety': 'Agent and tool-use safety',
     'dangerous-capabilities': 'Dangerous capability evaluations',
     'alignment-propensity': 'Alignment and propensity evaluations',
+    'ai-control': 'AI control evaluations',
+    'interpretability': 'Interpretability-based evaluation',
     'scoring': 'Scoring: rules, classifiers, judges, and humans',
     'bias-toxicity': 'Bias and toxicity',
     'factuality': 'Factuality and hallucination',

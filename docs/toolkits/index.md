@@ -1,11 +1,11 @@
 # Toolkit catalogue
 
-**82 benchmarks, datasets, frameworks, red-teaming tools, and papers**, each with links to the paper, code, documentation, and data where they exist.
+**92 benchmarks, datasets, frameworks, red-teaming tools, and papers**, each with links to the paper, code, documentation, and data where they exist.
 
 !!! tip "New here?"
     Filter by **Beginner** and start with the resources that have a quickstart. If you are unsure what you need, read [How evaluation works](../getting-started/index.md) and [Choosing a resource](../guides/choosing.md) first.
 
-<small>Links were checked against primary sources on 2026-10-27. Quickstart commands are copied from each project's own documentation; this hub has not run them. Check upstream licences before using code or data.</small>
+<small>Links were checked against primary sources on 2026-10-30. Quickstart commands are copied from each project's own documentation; this hub has not run them. Check upstream licences before using code or data.</small>
 
 ## Browse by category
 
@@ -15,19 +15,22 @@
 | [Red teaming](red-teaming.md) | 6 |
 | [Multimodal and embodied](multimodal-and-embodied.md) | 4 |
 | [Tool-using agents](tool-using-agents.md) | 7 |
-| [Specialized risk](specialized-risk.md) | 8 |
+| [Specialized risk](specialized-risk.md) | 9 |
 | [Web and GUI agents](web-and-gui-agents.md) | 6 |
 | [Privacy](privacy.md) | 1 |
 | [Governance and research](governance-and-research.md) | 2 |
 | [Directories](directories.md) | 2 |
 | [Evaluation infrastructure](evaluation-infrastructure.md) | 8 |
-| [Refusal calibration](refusal-calibration.md) | 4 |
-| [Trustworthiness](trustworthiness.md) | 3 |
+| [Refusal calibration](refusal-calibration.md) | 5 |
+| [Trustworthiness](trustworthiness.md) | 4 |
 | [Alignment data](alignment-data.md) | 3 |
 | [Bias and toxicity](bias-and-toxicity.md) | 6 |
 | [Factuality and hallucination](factuality-and-hallucination.md) | 3 |
 | [Prompt injection](prompt-injection.md) | 7 |
 | [Capability controls](capability-controls.md) | 3 |
+| [AI control](ai-control.md) | 1 |
+| [Interpretability](interpretability.md) | 4 |
+| [Safety classifiers](safety-classifiers.md) | 2 |
 
 ## All resources
 
@@ -52,7 +55,9 @@
 | [BIPIA](prompt-injection.md#r071) | Prompt injection | Benchmark | 🟡 Intermediate |  | [Paper](https://arxiv.org/abs/2312.14197) · [Code](https://github.com/microsoft/BIPIA) |
 | [BOLD](bias-and-toxicity.md#r057) | Bias and toxicity | Dataset | 🟡 Intermediate | ✅ | [Paper](https://arxiv.org/abs/2101.11718) · [Code](https://github.com/amazon-science/bold) · [Data](https://huggingface.co/datasets/AmazonScience/bold) |
 | [ChemSafetyBench](specialized-risk.md#r007) | Specialized risk | Benchmark | 🔴 Advanced |  | [Paper](https://arxiv.org/abs/2411.16736) |
+| [CoCoNot](refusal-calibration.md#r092) | Refusal calibration | Benchmark | 🟢 Beginner | ✅ | [Paper](https://arxiv.org/abs/2407.12043) · [Code](https://github.com/allenai/noncompliance) · [Data](https://huggingface.co/datasets/allenai/coconot) |
 | [COMPL-AI](governance-and-research.md#r077) | Governance and research | Benchmark suite | 🔴 Advanced |  | [Paper](https://arxiv.org/abs/2410.07959) · [Code](https://github.com/compl-ai/compl-ai) |
+| [ControlArena](ai-control.md#r085) | AI control | Framework | 🔴 Advanced | ✅ | [Code](https://github.com/UKGovernmentBEIS/control-arena) · [Docs](https://control-arena.aisi.org.uk/) |
 | [CrowS-Pairs](bias-and-toxicity.md#r058) | Bias and toxicity | Dataset | 🟡 Intermediate |  | [Paper](https://arxiv.org/abs/2010.00133) · [Code](https://github.com/nyu-mll/crows-pairs) |
 | [Cybench](specialized-risk.md#r065) | Specialized risk | Benchmark | 🔴 Advanced | ✅ | [Paper](https://arxiv.org/abs/2408.08926) · [Code](https://github.com/andyzorigin/cybench) |
 | [CyberSecEval](specialized-risk.md#r064) | Specialized risk | Benchmark suite | 🔴 Advanced |  | [Paper](https://arxiv.org/abs/2312.04724) · [Code](https://github.com/meta-llama/PurpleLlama) |
@@ -76,12 +81,16 @@
 | [Inspect Evals](evaluation-infrastructure.md#r027) | Evaluation infrastructure | Evaluation collection | 🟢 Beginner | ✅ | [Code](https://github.com/UKGovernmentBEIS/inspect_evals) · [Docs](https://ukgovernmentbeis.github.io/inspect_evals/) |
 | [JailbreakBench](content-safety.md#r039) | Content safety | Benchmark | 🟡 Intermediate | ✅ | [Paper](https://arxiv.org/abs/2404.01318) · [Code](https://github.com/JailbreakBench/jailbreakbench) · [Docs](https://jailbreakbench.github.io/) · [Data](https://huggingface.co/datasets/JailbreakBench/JBB-Behaviors) |
 | [JailbreakEval](red-teaming.md#r037) | Red teaming | Toolkit | 🟡 Intermediate |  | [Paper](https://arxiv.org/abs/2406.09321) · [Code](https://github.com/ThuCCSLab/JailbreakEval) |
+| [Llama Guard](safety-classifiers.md#r091) | Safety classifiers | Classifier model | 🟡 Intermediate |  | [Paper](https://arxiv.org/abs/2312.06674) · [Code](https://github.com/meta-llama/PurpleLlama) · [Docs](https://huggingface.co/meta-llama/Llama-Guard-3-8B) |
 | [LLMail-Inject](prompt-injection.md#r072) | Prompt injection | Dataset and challenge | 🔴 Advanced |  | [Paper](https://arxiv.org/abs/2506.09956) · [Code](https://github.com/microsoft/llmail-inject-challenge) |
 | [lm-evaluation-harness](evaluation-infrastructure.md#r028) | Evaluation infrastructure | Framework | 🟡 Intermediate | ✅ | [Paper](https://arxiv.org/abs/2405.14782) · [Code](https://github.com/EleutherAI/lm-evaluation-harness) |
 | [MACHIAVELLI](specialized-risk.md#r075) | Specialized risk | Benchmark | 🔴 Advanced |  | [Paper](https://arxiv.org/abs/2304.03279) · [Code](https://github.com/aypan17/machiavelli) |
+| [MASK](trustworthiness.md#r083) | Trustworthiness | Benchmark | 🟡 Intermediate | ✅ | [Paper](https://arxiv.org/abs/2503.03750) · [Code](https://github.com/centerforaisafety/mask) · [Docs](https://www.mask-benchmark.ai/) · [Data](https://huggingface.co/datasets/cais/MASK) |
 | [MM-SafetyBench](multimodal-and-embodied.md#r073) | Multimodal and embodied | Benchmark | 🔴 Advanced |  | [Paper](https://arxiv.org/abs/2311.17600) · [Code](https://github.com/isXinLiu/MM-SafetyBench) |
 | [Moonshot](evaluation-infrastructure.md#r035) | Evaluation infrastructure | Toolkit | 🟡 Intermediate |  | [Code](https://github.com/aiverify-foundation/moonshot) · [Docs](https://aiverify-foundation.github.io/moonshot/) |
 | [MSSBench](multimodal-and-embodied.md#r074) | Multimodal and embodied | Benchmark | 🔴 Advanced |  | [Paper](https://arxiv.org/abs/2410.06172) · [Code](https://github.com/UCSB-AI/MSSBench) |
+| [Neuronpedia](interpretability.md#r089) | Interpretability | Platform | 🟢 Beginner |  | [Code](https://github.com/hijohnnylin/neuronpedia) · [Docs](https://neuronpedia.org/) |
+| [nnsight](interpretability.md#r087) | Interpretability | Library | 🟡 Intermediate | ✅ | [Paper](https://arxiv.org/abs/2407.14561) · [Code](https://github.com/ndif-team/nnsight) · [Docs](https://nnsight.net/) |
 | [OpenAgentSafety](tool-using-agents.md#r025) | Tool-using agents | Framework | 🔴 Advanced |  | [Paper](https://arxiv.org/abs/2507.06134) · [Code](https://github.com/Open-Agent-Safety/OpenAgentSafety) |
 | [OR-Bench](refusal-calibration.md#r043) | Refusal calibration | Benchmark | 🟢 Beginner | ✅ | [Paper](https://arxiv.org/abs/2405.20947) · [Code](https://github.com/justincui03/or-bench) · [Data](https://huggingface.co/datasets/bench-llm/or-bench) |
 | [OSWorld](capability-controls.md#r080) | Capability controls | Benchmark and environment | 🔴 Advanced | ✅ | [Paper](https://arxiv.org/abs/2404.07972) · [Code](https://github.com/xlang-ai/OSWorld) |
@@ -94,6 +103,7 @@
 | [RedCode](specialized-risk.md#r011) | Specialized risk | Benchmark | 🔴 Advanced |  | [Paper](https://arxiv.org/abs/2411.07781) · [Code](https://github.com/AI-secure/RedCode) |
 | [Refusal-Trained LLMs Are Easily Jailbroken As Browser Agents](web-and-gui-agents.md#r010) | Web and GUI agents | Paper | 🔴 Advanced |  | [Paper](https://arxiv.org/abs/2410.13886) · [Code](https://github.com/scaleapi/browser-art) |
 | [S-Eval](content-safety.md#r050) | Content safety | Benchmark | 🟡 Intermediate |  | [Paper](https://arxiv.org/abs/2405.14191) · [Code](https://github.com/IS2Lab/S-Eval) · [Data](https://huggingface.co/datasets/IS2Lab/S-Eval) |
+| [SAELens](interpretability.md#r088) | Interpretability | Library | 🔴 Advanced |  | [Code](https://github.com/decoderesearch/SAELens) · [Docs](https://decoderesearch.github.io/SAELens/) |
 | [SafeAgentBench](multimodal-and-embodied.md#r006) | Multimodal and embodied | Benchmark | 🔴 Advanced |  | [Paper](https://arxiv.org/abs/2412.13178) · [Code](https://github.com/shengyin1224/SafeAgentBench) |
 | [SafeArena](web-and-gui-agents.md#r023) | Web and GUI agents | Benchmark | 🔴 Advanced |  | [Paper](https://arxiv.org/abs/2503.04957) · [Code](https://github.com/McGill-NLP/safearena) |
 | [SafeBench (multimodal)](multimodal-and-embodied.md#r003) | Multimodal and embodied | Benchmark | 🔴 Advanced |  | [Paper](https://arxiv.org/abs/2410.18927) · [Code](https://github.com/NY1024/SafeBench) |
@@ -102,6 +112,7 @@
 | [SALAD-Bench](content-safety.md#r001) | Content safety | Benchmark | 🟡 Intermediate | ✅ | [Paper](https://arxiv.org/abs/2402.05044) · [Code](https://github.com/OpenSafetyLab/SALAD-BENCH) · [Data](https://huggingface.co/datasets/OpenSafetyLab/Salad-Data) |
 | [SG-Bench](content-safety.md#r005) | Content safety | Benchmark | 🟡 Intermediate |  | [Paper](https://arxiv.org/abs/2410.21965) · [Code](https://github.com/MurrayTom/SG-Bench) |
 | [SimpleQA](factuality-and-hallucination.md#r061) | Factuality and hallucination | Benchmark | 🟢 Beginner | ✅ | [Paper](https://arxiv.org/abs/2411.04368) · [Code](https://github.com/openai/simple-evals) |
+| [Situational Awareness Dataset (SAD)](specialized-risk.md#r084) | Specialized risk | Benchmark | 🔴 Advanced | ✅ | [Paper](https://arxiv.org/abs/2407.04694) · [Code](https://github.com/LRudL/sad) · [Docs](https://situational-awareness-dataset.org/) |
 | [SORRY-Bench](refusal-calibration.md#r041) | Refusal calibration | Benchmark | 🟡 Intermediate |  | [Paper](https://arxiv.org/abs/2406.14598) · [Code](https://github.com/SORRY-Bench/SORRY-Bench) · [Data](https://huggingface.co/datasets/sorry-bench/sorry-bench-202406) |
 | [ST-WebAgentBench](web-and-gui-agents.md#r021) | Web and GUI agents | Benchmark | 🔴 Advanced |  | [Paper](https://arxiv.org/abs/2410.06703) · [Code](https://github.com/segev-shlomov/ST-WebAgentBench) |
 | [StereoSet](bias-and-toxicity.md#r059) | Bias and toxicity | Benchmark | 🟡 Intermediate | ✅ | [Paper](https://arxiv.org/abs/2004.09456) · [Code](https://github.com/moinnadeem/StereoSet) · [Data](https://huggingface.co/datasets/McGill-NLP/stereoset) |
@@ -110,10 +121,12 @@
 | [Tensor Trust](prompt-injection.md#r070) | Prompt injection | Dataset and benchmark | 🟡 Intermediate |  | [Paper](https://arxiv.org/abs/2311.01011) · [Code](https://github.com/HumanCompatibleAI/tensor-trust) |
 | [ToolEmu / LM-Emulated Sandbox](tool-using-agents.md#r008) | Tool-using agents | Framework | 🔴 Advanced |  | [Paper](https://arxiv.org/abs/2309.15817) · [Code](https://github.com/ryoungj/ToolEmu) |
 | [ToxiGen](bias-and-toxicity.md#r055) | Bias and toxicity | Dataset | 🟡 Intermediate |  | [Paper](https://arxiv.org/abs/2203.09509) · [Code](https://github.com/microsoft/TOXIGEN) · [Data](https://huggingface.co/datasets/toxigen/toxigen-data) |
+| [TransformerLens](interpretability.md#r086) | Interpretability | Library | 🟡 Intermediate | ✅ | [Code](https://github.com/TransformerLensOrg/TransformerLens) · [Docs](https://transformerlensorg.github.io/TransformerLens/) |
 | [TrustLLM](trustworthiness.md#r047) | Trustworthiness | Benchmark suite | 🟡 Intermediate |  | [Paper](https://arxiv.org/abs/2401.05561) · [Code](https://github.com/HowieHwong/TrustLLM) |
 | [TruthfulQA](factuality-and-hallucination.md#r060) | Factuality and hallucination | Benchmark | 🟢 Beginner | ✅ | [Paper](https://arxiv.org/abs/2109.07958) · [Code](https://github.com/sylinrl/TruthfulQA) · [Data](https://huggingface.co/datasets/truthfulqa/truthful_qa) |
 | [WASP](prompt-injection.md#r069) | Prompt injection | Benchmark | 🔴 Advanced |  | [Paper](https://arxiv.org/abs/2504.18575) · [Code](https://github.com/facebookresearch/wasp) |
 | [WebArena](capability-controls.md#r079) | Capability controls | Benchmark and environment | 🔴 Advanced |  | [Paper](https://arxiv.org/abs/2307.13854) · [Code](https://github.com/web-arena-x/webarena) |
+| [WildGuard](safety-classifiers.md#r090) | Safety classifiers | Classifier and dataset | 🟡 Intermediate | ✅ | [Paper](https://arxiv.org/abs/2406.18495) · [Code](https://github.com/allenai/wildguard) · [Data](https://huggingface.co/datasets/allenai/wildguardmix) |
 | [WildTeaming](red-teaming.md#r019) | Red teaming | Research toolkit | 🔴 Advanced |  | [Paper](https://arxiv.org/abs/2406.18510) · [Code](https://github.com/allenai/wildteaming) · [Data](https://huggingface.co/datasets/allenai/wildjailbreak) |
 | [WMDP](specialized-risk.md#r063) | Specialized risk | Benchmark | 🔴 Advanced | ✅ | [Paper](https://arxiv.org/abs/2403.03218) · [Code](https://github.com/centerforaisafety/wmdp) · [Data](https://huggingface.co/datasets/cais/wmdp) |
 | [XSTest](refusal-calibration.md#r042) | Refusal calibration | Benchmark | 🟢 Beginner | ✅ | [Paper](https://arxiv.org/abs/2308.01263) · [Code](https://github.com/paul-rottger/xstest) · [Data](https://huggingface.co/datasets/Paul/XSTest) |

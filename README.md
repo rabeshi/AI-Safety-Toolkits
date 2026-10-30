@@ -5,8 +5,9 @@
 📖 **Read it as a website: <https://rabeshi.github.io/AI-Safety-Toolkits/>**
 
 This hub is a beginner-friendly guide to AI safety evaluation. It explains the methods researchers use to test AI
-models and agents, walks you through hands-on tutorials, and catalogues 82 benchmarks, datasets, and tools, each
-with links to the **paper**, **code**, **docs**, and **data**.
+models and agents, walks you through hands-on tutorials, and catalogues 92 benchmarks, datasets, and tools, each
+with links to the **paper**, **code**, **docs**, and **data**. A Foundations section and study roadmap place
+evaluation within the wider field of AI safety.
 
 You don't need a machine-learning background. If you can run a Python script, you can follow along.
 
@@ -15,9 +16,10 @@ You don't need a machine-learning background. If you can run a Python script, yo
 | Section | What you get |
 | --- | --- |
 | [Getting started](docs/getting-started/index.md) | What an evaluation is, key vocabulary, setup guide, learning paths |
+| [Foundations](docs/foundations/index.md) | A study roadmap for the whole field; why AI might be dangerous; key alignment concepts; how safety is built into models (RLHF, constitutional AI, adversarial training, unlearning); interpretability in depth; governance and policy; free courses, papers, and communities |
 | [Evaluation methods](docs/methods/index.md) | 15 plain-language guides: harmful requests and over-refusal, red teaming, prompt injection, agent safety, dangerous capabilities, alignment and propensity, AI control, interpretability, scoring and judges, bias, factuality, privacy, multimodal, holistic suites |
 | [Tutorials](docs/tutorials/index.md) | 6 step-by-step exercises, from scoring by hand (no installs) to testing an AI agent for prompt injection |
-| [Toolkit catalogue](CATALOG.md) | 82 resources with paper, code, docs, and dataset links; 34 have copy-paste quickstarts |
+| [Toolkit catalogue](CATALOG.md) | 92 resources with paper, code, docs, and dataset links; 41 have copy-paste quickstarts |
 | [Guides](docs/guides/choosing.md) | Choosing a resource, designing a rigorous study, metrics and reporting, templates |
 
 ## Start in five minutes

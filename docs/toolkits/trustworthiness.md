@@ -1,6 +1,6 @@
 # Trustworthiness
 
-3 resources. Open **Quickstart** boxes for copy-paste commands from the upstream project.
+4 resources. Open **Quickstart** boxes for copy-paste commands from the upstream project.
 
 ### DecodingTrust { #r046 }
 
@@ -59,3 +59,29 @@ Examines agreement with users at the expense of truthful judgment.
     Research evaluations; selected tasks do not cover every form of deception.
 
 <small>Setup effort: Moderate (editorial estimate; varies by configuration). Source reviewed; execution not tested (2026-10-27).</small>
+
+---
+
+### MASK { #r083 }
+
+**Benchmark** · 🟡 Intermediate · `R083`
+
+Separates honesty from accuracy by checking whether models contradict their own beliefs under pressure.
+
+**Links:** [Paper](https://arxiv.org/abs/2503.03750) · [Code](https://github.com/centerforaisafety/mask) · [Docs](https://www.mask-benchmark.ai/) · [Data](https://huggingface.co/datasets/cais/MASK)
+
+**Evaluation methods:** [Alignment and propensity evaluations](../methods/alignment-propensity.md)
+
+??? example "Quickstart (Inspect Evals)"
+
+    ```bash
+    pip install inspect-ai inspect-evals
+    # set INSPECT_EVAL_MODEL first (see the setup guide); some evals also call a grader model
+    inspect eval inspect_evals/mask --limit 10
+    inspect view   # browse the log in your web browser
+    ```
+
+!!! warning "Keep in mind"
+    Belief elicitation is itself imperfect; a measured lie depends on how the belief was elicited.
+
+<small>Setup effort: Low to moderate (editorial estimate; varies by configuration). Source reviewed; execution not tested (2026-10-30).</small>

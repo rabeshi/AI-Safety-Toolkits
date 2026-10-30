@@ -80,6 +80,14 @@ nav:
       - Set up your computer: getting-started/setup.md
       - Learning paths: getting-started/learning-paths.md
       - Glossary: getting-started/glossary.md
+  - Foundations:
+      - foundations/index.md
+      - Why AI might be dangerous: foundations/why-ai-risk.md
+      - Key alignment concepts: foundations/alignment-concepts.md
+      - How safety is built into models: foundations/making-models-safe.md
+      - Interpretability in depth: foundations/interpretability.md
+      - Governance and policy: foundations/governance.md
+      - Courses, reading, and community: foundations/courses-and-reading.md
   - Evaluation methods:
       - methods/index.md
       - Testing what a model says:
@@ -120,6 +128,9 @@ nav:
       - Specialized risk: toolkits/specialized-risk.md
       - Multimodal and embodied: toolkits/multimodal-and-embodied.md
       - Privacy: toolkits/privacy.md
+      - Safety classifiers: toolkits/safety-classifiers.md
+      - AI control: toolkits/ai-control.md
+      - Interpretability: toolkits/interpretability.md
       - Bias and toxicity: toolkits/bias-and-toxicity.md
       - Factuality and hallucination: toolkits/factuality-and-hallucination.md
       - Trustworthiness: toolkits/trustworthiness.md

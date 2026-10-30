@@ -1,6 +1,6 @@
 # Refusal calibration
 
-4 resources. Open **Quickstart** boxes for copy-paste commands from the upstream project.
+5 resources. Open **Quickstart** boxes for copy-paste commands from the upstream project.
 
 ### StrongREJECT { #r040 }
 
@@ -97,3 +97,29 @@ Evaluates over-refusal on benign prompts that appear sensitive.
     Pair with harmful-request tests to measure both error directions.
 
 <small>Setup effort: Low to moderate (editorial estimate; varies by configuration). Source reviewed; execution not tested (2026-10-27).</small>
+
+---
+
+### CoCoNot { #r092 }
+
+**Benchmark** · 🟢 Beginner · `R092`
+
+Tests when models should not comply (incomplete, unsupported, or unsafe requests) and when they over-refuse.
+
+**Links:** [Paper](https://arxiv.org/abs/2407.12043) · [Code](https://github.com/allenai/noncompliance) · [Data](https://huggingface.co/datasets/allenai/coconot)
+
+**Evaluation methods:** [Harmful requests and over-refusal](../methods/harmful-requests.md)
+
+??? example "Quickstart (Inspect Evals)"
+
+    ```bash
+    pip install inspect-ai inspect-evals
+    # set INSPECT_EVAL_MODEL first (see the setup guide); some evals also call a grader model
+    inspect eval inspect_evals/coconot --limit 10
+    inspect view   # browse the log in your web browser
+    ```
+
+!!! warning "Keep in mind"
+    Its noncompliance taxonomy is broader than safety; separate safety categories when reporting.
+
+<small>Setup effort: Low (editorial estimate; varies by configuration). Source reviewed; execution not tested (2026-10-30).</small>

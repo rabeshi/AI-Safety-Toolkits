@@ -41,7 +41,7 @@ The original 25 resource names match Table 1 of [OpenAgentSafety](https://arxiv.
 
 ## How links were verified (October 2026)
 
-- **Paper links:** all 76 arXiv IDs were checked against the arXiv API so that each title matches the resource.
+- **Paper links:** all 82 arXiv IDs were checked against the arXiv API so that each title matches the resource.
 - **Code links:** each repository was confirmed to exist via the GitHub API; renamed repositories use their new location.
 - **Dataset links:** each Hugging Face dataset was confirmed to exist. Config and split names in quickstarts come from the Hugging Face datasets API.
 - **Inspect Evals task names** were taken from the Inspect Evals task registry.

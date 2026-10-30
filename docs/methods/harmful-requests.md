@@ -51,6 +51,7 @@ Always report both of the first two. Either one alone can be gamed: refuse every
 <!-- BEGIN toolkits:harmful-requests -->
 | Resource | What it does | Level | Links |
 | --- | --- | --- | --- |
+| [CoCoNot](../toolkits/refusal-calibration.md#r092) | Tests when models should not comply (incomplete, unsupported, or unsafe requests) and when they over-refuse. | 🟢 Beginner | [Paper](https://arxiv.org/abs/2407.12043) · [Code](https://github.com/allenai/noncompliance) · [Data](https://huggingface.co/datasets/allenai/coconot) |
 | [Do-Not-Answer](../toolkits/content-safety.md#r044) | Provides requests that responsible assistants should decline. | 🟢 Beginner | [Paper](https://arxiv.org/abs/2308.13387) · [Code](https://github.com/Libr-AI/do-not-answer) · [Data](https://huggingface.co/datasets/LibrAI/do-not-answer) |
 | [OR-Bench](../toolkits/refusal-calibration.md#r043) | Evaluates over-refusal on benign prompts that appear sensitive. | 🟢 Beginner | [Paper](https://arxiv.org/abs/2405.20947) · [Code](https://github.com/justincui03/or-bench) · [Data](https://huggingface.co/datasets/bench-llm/or-bench) |
 | [SafetyBench](../toolkits/content-safety.md#r045) | Evaluates safety understanding through multiple-choice questions. | 🟢 Beginner | [Paper](https://arxiv.org/abs/2309.07045) · [Code](https://github.com/thu-coai/SafetyBench) · [Data](https://huggingface.co/datasets/thu-coai/SafetyBench) |
@@ -65,6 +66,7 @@ Always report both of the first two. Either one alone can be gamed: refuse every
 | [SG-Bench](../toolkits/content-safety.md#r005) | Evaluates LLM safety generalization across tasks and prompt types. | 🟡 Intermediate | [Paper](https://arxiv.org/abs/2410.21965) · [Code](https://github.com/MurrayTom/SG-Bench) |
 | [SORRY-Bench](../toolkits/refusal-calibration.md#r041) | Evaluates safety refusal across a structured harmful-request taxonomy. | 🟡 Intermediate | [Paper](https://arxiv.org/abs/2406.14598) · [Code](https://github.com/SORRY-Bench/SORRY-Bench) · [Data](https://huggingface.co/datasets/sorry-bench/sorry-bench-202406) |
 | [StrongREJECT](../toolkits/refusal-calibration.md#r040) | Assesses harmful-request fulfillment beyond superficial refusal wording. | 🟡 Intermediate | [Paper](https://arxiv.org/abs/2402.10260) · [Code](https://github.com/dsbowen/strong_reject) |
+| [WildGuard](../toolkits/safety-classifiers.md#r090) | Open classifier that labels prompt harmfulness, response harmfulness, and refusals. | 🟡 Intermediate | [Paper](https://arxiv.org/abs/2406.18495) · [Code](https://github.com/allenai/wildguard) · [Data](https://huggingface.co/datasets/allenai/wildguardmix) |
 <!-- END toolkits -->
 
 ## Key papers

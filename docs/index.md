@@ -24,6 +24,14 @@ You do not need a background in machine learning. If you can run a Python script
 
     [:octicons-arrow-right-24: How evaluation works](getting-started/index.md)
 
+-   :material-book-open-variant: **Learn the whole field**
+
+    ---
+
+    A study roadmap plus foundations: why AI could be dangerous, alignment ideas, how safety is trained in, interpretability, and governance.
+
+    [:octicons-arrow-right-24: Foundations](foundations/index.md)
+
 -   :material-map-search-outline: **Learn the methods**
 
     ---
@@ -44,11 +52,23 @@ You do not need a background in machine learning. If you can run a Python script
 
     ---
 
-    82 benchmarks, datasets, and tools, each with paper, code, and quickstart links.
+    92 benchmarks, datasets, and tools, each with paper, code, and quickstart links.
 
     [:octicons-arrow-right-24: Toolkit catalogue](toolkits/index.md)
 
+-   :material-school: **Courses and community**
+
+    ---
+
+    Free courses (AI Safety textbook, BlueDot, ARENA), foundational papers, communities, and career programmes.
+
+    [:octicons-arrow-right-24: Courses and reading](foundations/courses-and-reading.md)
+
 </div>
+
+!!! tip "Want to learn AI safety as a whole, not just evaluation?"
+    Follow the [study roadmap](foundations/index.md): foundations, then this hub's evaluation material, then a
+    deeper technical, research, or policy track, then a project of your own.
 
 ## Your first hour
 

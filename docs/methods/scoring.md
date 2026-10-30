@@ -54,9 +54,11 @@ In practice: use the simplest scorer that works, and **check it against humans**
 | --- | --- | --- | --- |
 | [BeaverTails](../toolkits/alignment-data.md#r051) | Provides safety annotations and preference data for assistant responses. | 🟢 Beginner | [Paper](https://arxiv.org/abs/2307.04657) · [Code](https://github.com/PKU-Alignment/beavertails) · [Data](https://huggingface.co/datasets/PKU-Alignment/BeaverTails) |
 | [JailbreakEval](../toolkits/red-teaming.md#r037) | Provides evaluators for jailbreak outcomes. | 🟡 Intermediate | [Paper](https://arxiv.org/abs/2406.09321) · [Code](https://github.com/ThuCCSLab/JailbreakEval) |
+| [Llama Guard](../toolkits/safety-classifiers.md#r091) | Open model that classifies prompts and responses against a hazard taxonomy, for filtering or scoring. | 🟡 Intermediate | [Paper](https://arxiv.org/abs/2312.06674) · [Code](https://github.com/meta-llama/PurpleLlama) · [Docs](https://huggingface.co/meta-llama/Llama-Guard-3-8B) |
 | [R-Judge](../toolkits/tool-using-agents.md#r016) | Evaluates recognition of safety risks in agent interaction records. | 🟡 Intermediate | [Paper](https://arxiv.org/abs/2401.10019) · [Code](https://github.com/Lordog/R-Judge) |
 | [SALAD-Bench](../toolkits/content-safety.md#r001) | Hierarchical evaluation of harmful requests and model safety. | 🟡 Intermediate | [Paper](https://arxiv.org/abs/2402.05044) · [Code](https://github.com/OpenSafetyLab/SALAD-BENCH) · [Data](https://huggingface.co/datasets/OpenSafetyLab/Salad-Data) |
 | [StrongREJECT](../toolkits/refusal-calibration.md#r040) | Assesses harmful-request fulfillment beyond superficial refusal wording. | 🟡 Intermediate | [Paper](https://arxiv.org/abs/2402.10260) · [Code](https://github.com/dsbowen/strong_reject) |
+| [WildGuard](../toolkits/safety-classifiers.md#r090) | Open classifier that labels prompt harmfulness, response harmfulness, and refusals. | 🟡 Intermediate | [Paper](https://arxiv.org/abs/2406.18495) · [Code](https://github.com/allenai/wildguard) · [Data](https://huggingface.co/datasets/allenai/wildguardmix) |
 | [SafeBench (multimodal)](../toolkits/multimodal-and-embodied.md#r003) | Evaluates multimodal harmful queries using collaborative judges. | 🔴 Advanced | [Paper](https://arxiv.org/abs/2410.18927) · [Code](https://github.com/NY1024/SafeBench) |
 <!-- END toolkits -->
 

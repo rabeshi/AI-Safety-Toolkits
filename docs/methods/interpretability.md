@@ -34,10 +34,18 @@ young, so results should be treated as promising evidence, not proof.
 - **Testing only in-distribution.** Probes often fail on new scenarios.
 - **Treating a probe as a guarantee.** A negative result doesn't prove absence.
 
-## Toolkits
+## Toolkits for this method
 
-Not yet in the catalogue. Common open-source starting points are [TransformerLens](https://github.com/TransformerLensOrg/TransformerLens)
-and [nnsight](https://github.com/ndif-team/nnsight) for recording and editing activations.
+<!-- BEGIN toolkits:interpretability -->
+| Resource | What it does | Level | Links |
+| --- | --- | --- | --- |
+| [Neuronpedia](../toolkits/interpretability.md#r089) | A free website for browsing and searching sparse-autoencoder features of open models, no code needed. | 🟢 Beginner | [Code](https://github.com/hijohnnylin/neuronpedia) · [Docs](https://neuronpedia.org/) |
+| [nnsight](../toolkits/interpretability.md#r087) | Reads and edits the internals of PyTorch and Hugging Face models during a forward pass. | 🟡 Intermediate | [Paper](https://arxiv.org/abs/2407.14561) · [Code](https://github.com/ndif-team/nnsight) · [Docs](https://nnsight.net/) |
+| [TransformerLens](../toolkits/interpretability.md#r086) | Loads language models with hooks on every activation, for mechanistic interpretability research. | 🟡 Intermediate | [Code](https://github.com/TransformerLensOrg/TransformerLens) · [Docs](https://transformerlensorg.github.io/TransformerLens/) |
+| [SAELens](../toolkits/interpretability.md#r088) | Trains, loads, and analyses sparse autoencoders that split model activations into interpretable features. | 🔴 Advanced | [Code](https://github.com/decoderesearch/SAELens) · [Docs](https://decoderesearch.github.io/SAELens/) |
+<!-- END toolkits -->
+
+For a full introduction to the field, see [Interpretability in depth](../foundations/interpretability.md).
 
 ## Key papers
 

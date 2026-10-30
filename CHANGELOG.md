@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3.0 — 2026-10-30
+
+- Added a Foundations section with a four-stage study roadmap and pages on why AI might be dangerous, key
+  alignment concepts, how safety is built into models, interpretability in depth, governance and policy, and
+  courses, reading, and community.
+- Added 10 resources (R083–R092): MASK, SAD, ControlArena, TransformerLens, nnsight, SAELens, Neuronpedia,
+  WildGuard, Llama Guard, and CoCoNot, in three new categories (AI control, interpretability, safety classifiers).
+- The AI control and interpretability method pages now list catalogue toolkits.
+
 ## 0.2.0 — 2026-10-30
 
 - Added a documentation website (MkDocs Material) with a GitHub Pages deployment workflow.

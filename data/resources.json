@@ -2210,5 +2210,284 @@
       "agent-safety",
       "alignment-propensity"
     ]
+  },
+  {
+    "id": "R083",
+    "name": "MASK",
+    "category": "Trustworthiness",
+    "kind": "Benchmark",
+    "level": "Intermediate",
+    "focus": "Separates honesty from accuracy by checking whether models contradict their own beliefs under pressure.",
+    "url": "https://github.com/centerforaisafety/mask",
+    "limitations": "Belief elicitation is itself imperfect; a measured lie depends on how the belief was elicited.",
+    "original_number": null,
+    "checked_on": "2026-10-30",
+    "verification": "Source reviewed; execution not tested",
+    "reviewed_source_url": "https://raw.githubusercontent.com/centerforaisafety/mask/HEAD/README.md",
+    "license_status": "Check upstream code and dataset licenses separately",
+    "setup_effort": "Low to moderate (editorial estimate; varies by configuration)",
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2503.03750",
+    "code_url": "https://github.com/centerforaisafety/mask",
+    "docs_url": "https://www.mask-benchmark.ai/",
+    "dataset_url": "https://huggingface.co/datasets/cais/MASK",
+    "quickstart": {
+      "language": "bash",
+      "source": "Inspect Evals",
+      "code": "pip install inspect-ai inspect-evals\n# set INSPECT_EVAL_MODEL first (see the setup guide); some evals also call a grader model\ninspect eval inspect_evals/mask --limit 10\ninspect view   # browse the log in your web browser"
+    },
+    "methods": [
+      "alignment-propensity"
+    ]
+  },
+  {
+    "id": "R084",
+    "name": "Situational Awareness Dataset (SAD)",
+    "category": "Specialized risk",
+    "kind": "Benchmark",
+    "level": "Advanced",
+    "focus": "Measures whether models know facts about themselves and can tell evaluation from deployment.",
+    "url": "https://github.com/LRudL/sad",
+    "limitations": "Situational awareness is a capability, not a harm by itself; interpret it alongside propensity results.",
+    "original_number": null,
+    "checked_on": "2026-10-30",
+    "verification": "Source reviewed; execution not tested",
+    "reviewed_source_url": "https://raw.githubusercontent.com/LRudL/sad/HEAD/README.md",
+    "license_status": "Check upstream code and dataset licenses separately",
+    "setup_effort": "Moderate (editorial estimate; varies by configuration)",
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2407.04694",
+    "code_url": "https://github.com/LRudL/sad",
+    "docs_url": "https://situational-awareness-dataset.org/",
+    "dataset_url": null,
+    "quickstart": {
+      "language": "bash",
+      "source": "Inspect Evals",
+      "code": "pip install inspect-ai inspect-evals\n# set INSPECT_EVAL_MODEL first (see the setup guide); some evals also call a grader model\ninspect eval inspect_evals/sad_stages_oversight --limit 10\ninspect eval inspect_evals/sad_influence --limit 10\ninspect view   # browse the log in your web browser"
+    },
+    "methods": [
+      "alignment-propensity"
+    ]
+  },
+  {
+    "id": "R085",
+    "name": "ControlArena",
+    "category": "AI control",
+    "kind": "Framework",
+    "level": "Advanced",
+    "focus": "Runs AI control experiments: settings with benign main tasks and sabotage side tasks, plus monitors and protocols.",
+    "url": "https://github.com/UKGovernmentBEIS/control-arena",
+    "limitations": "Results depend heavily on the strength of the red-team attack policy and the chosen audit budget.",
+    "original_number": null,
+    "checked_on": "2026-10-30",
+    "verification": "Source reviewed; execution not tested",
+    "reviewed_source_url": "https://raw.githubusercontent.com/UKGovernmentBEIS/control-arena/HEAD/README.md",
+    "license_status": "Check upstream code and dataset licenses separately",
+    "setup_effort": "Moderate to high; most settings need Docker (editorial estimate; varies by configuration)",
+    "execution_tested": false,
+    "paper_url": null,
+    "code_url": "https://github.com/UKGovernmentBEIS/control-arena",
+    "docs_url": "https://control-arena.aisi.org.uk/",
+    "dataset_url": null,
+    "quickstart": {
+      "language": "bash",
+      "source": "ControlArena README",
+      "code": "pip install control-arena\n# most settings also need Docker for sandboxes; then follow the\n# defer-to-trusted example in the README or the \"Introduction to Control\" guide"
+    },
+    "methods": [
+      "ai-control"
+    ]
+  },
+  {
+    "id": "R086",
+    "name": "TransformerLens",
+    "category": "Interpretability",
+    "kind": "Library",
+    "level": "Intermediate",
+    "focus": "Loads language models with hooks on every activation, for mechanistic interpretability research.",
+    "url": "https://github.com/TransformerLensOrg/TransformerLens",
+    "limitations": "Version 4.0 replaced the HookedTransformer loading API used by many older tutorials.",
+    "original_number": null,
+    "checked_on": "2026-10-30",
+    "verification": "Source reviewed; execution not tested",
+    "reviewed_source_url": "https://raw.githubusercontent.com/TransformerLensOrg/TransformerLens/HEAD/README.md",
+    "license_status": "Check upstream code and dataset licenses separately",
+    "setup_effort": "Low for small models on CPU (editorial estimate; varies by configuration)",
+    "execution_tested": false,
+    "paper_url": null,
+    "code_url": "https://github.com/TransformerLensOrg/TransformerLens",
+    "docs_url": "https://transformerlensorg.github.io/TransformerLens/",
+    "dataset_url": null,
+    "quickstart": {
+      "language": "python",
+      "source": "TransformerLens README",
+      "code": "# pip install transformer_lens\nfrom transformer_lens.model_bridge import TransformerBridge\n\n# Load a model (eg GPT-2 Small)\nbridge = TransformerBridge.boot_transformers(\"gpt2\", device=\"cpu\")\n\n# Run the model and get logits and activations\nlogits, activations = bridge.run_with_cache(\"Hello World\")"
+    },
+    "methods": [
+      "interpretability"
+    ]
+  },
+  {
+    "id": "R087",
+    "name": "nnsight",
+    "category": "Interpretability",
+    "kind": "Library",
+    "level": "Intermediate",
+    "focus": "Reads and edits the internals of PyTorch and Hugging Face models during a forward pass.",
+    "url": "https://github.com/ndif-team/nnsight",
+    "limitations": "Editing activations shows what a component can influence, not necessarily what it normally does.",
+    "original_number": null,
+    "checked_on": "2026-10-30",
+    "verification": "Source reviewed; execution not tested",
+    "reviewed_source_url": "https://raw.githubusercontent.com/ndif-team/nnsight/HEAD/README.md",
+    "license_status": "Check upstream code and dataset licenses separately",
+    "setup_effort": "Low for small models on CPU (editorial estimate; varies by configuration)",
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2407.14561",
+    "code_url": "https://github.com/ndif-team/nnsight",
+    "docs_url": "https://nnsight.net/",
+    "dataset_url": null,
+    "quickstart": {
+      "language": "python",
+      "source": "nnsight README",
+      "code": "# pip install nnsight\nfrom nnsight import TransformersModel\n\nmodel = TransformersModel(\"openai-community/gpt2\", dispatch=True)\n\nwith model.trace(\"The Eiffel Tower is in the city of\"):\n    # read a hidden state (a [batch, seq, hidden] tensor)\n    hidden = model.transformer.h[6].output.save()\n    # keep the final logits\n    logits = model.output.logits.save()\n\nprint(hidden.shape)\nprint(logits.argmax(-1))  # next-token predictions"
+    },
+    "methods": [
+      "interpretability"
+    ]
+  },
+  {
+    "id": "R088",
+    "name": "SAELens",
+    "category": "Interpretability",
+    "kind": "Library",
+    "level": "Advanced",
+    "focus": "Trains, loads, and analyses sparse autoencoders that split model activations into interpretable features.",
+    "url": "https://github.com/decoderesearch/SAELens",
+    "limitations": "Feature labels are interpretations; check them on held-out examples before relying on them.",
+    "original_number": null,
+    "checked_on": "2026-10-30",
+    "verification": "Source reviewed; execution not tested",
+    "reviewed_source_url": "https://raw.githubusercontent.com/decoderesearch/SAELens/HEAD/README.md",
+    "license_status": "Check upstream code and dataset licenses separately",
+    "setup_effort": "Moderate; training needs a GPU (editorial estimate; varies by configuration)",
+    "execution_tested": false,
+    "paper_url": null,
+    "code_url": "https://github.com/decoderesearch/SAELens",
+    "docs_url": "https://decoderesearch.github.io/SAELens/",
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "interpretability"
+    ]
+  },
+  {
+    "id": "R089",
+    "name": "Neuronpedia",
+    "category": "Interpretability",
+    "kind": "Platform",
+    "level": "Beginner",
+    "focus": "A free website for browsing and searching sparse-autoencoder features of open models, no code needed.",
+    "url": "https://neuronpedia.org/",
+    "limitations": "Automatically generated feature explanations can be wrong or incomplete.",
+    "original_number": null,
+    "checked_on": "2026-10-30",
+    "verification": "Source reviewed; execution not tested",
+    "reviewed_source_url": "https://raw.githubusercontent.com/hijohnnylin/neuronpedia/HEAD/README.md",
+    "license_status": "Check upstream code and dataset licenses separately",
+    "setup_effort": "None to browse (editorial estimate; varies by configuration)",
+    "execution_tested": false,
+    "paper_url": null,
+    "code_url": "https://github.com/hijohnnylin/neuronpedia",
+    "docs_url": "https://neuronpedia.org/",
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "interpretability"
+    ]
+  },
+  {
+    "id": "R090",
+    "name": "WildGuard",
+    "category": "Safety classifiers",
+    "kind": "Classifier and dataset",
+    "level": "Intermediate",
+    "focus": "Open classifier that labels prompt harmfulness, response harmfulness, and refusals.",
+    "url": "https://github.com/allenai/wildguard",
+    "limitations": "Classifier labels follow its training taxonomy; audit it on your own distribution.",
+    "original_number": null,
+    "checked_on": "2026-10-30",
+    "verification": "Source reviewed; execution not tested",
+    "reviewed_source_url": "https://raw.githubusercontent.com/allenai/wildguard/HEAD/README.md",
+    "license_status": "Check upstream code and dataset licenses separately",
+    "setup_effort": "Moderate; a GPU is recommended (editorial estimate; varies by configuration)",
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2406.18495",
+    "code_url": "https://github.com/allenai/wildguard",
+    "docs_url": null,
+    "dataset_url": "https://huggingface.co/datasets/allenai/wildguardmix",
+    "quickstart": {
+      "language": "python",
+      "source": "WildGuard README",
+      "code": "# pip install wildguard\nfrom wildguard import load_wildguard\n\nif __name__ == '__main__':\n    wildguard = load_wildguard()\n    items = [\n        {\"prompt\": \"How do I make a bomb?\", \"response\": \"Sorry, I can't help with that.\"},\n        {\"prompt\": \"What's the weather like today?\"},\n    ]\n    for item, result in zip(items, wildguard.classify(items)):\n        print(item[\"prompt\"], result)"
+    },
+    "methods": [
+      "harmful-requests",
+      "scoring"
+    ]
+  },
+  {
+    "id": "R091",
+    "name": "Llama Guard",
+    "category": "Safety classifiers",
+    "kind": "Classifier model",
+    "level": "Intermediate",
+    "focus": "Open model that classifies prompts and responses against a hazard taxonomy, for filtering or scoring.",
+    "url": "https://github.com/meta-llama/PurpleLlama",
+    "limitations": "Model weights are gated on Hugging Face; the taxonomy may not match your policy.",
+    "original_number": null,
+    "checked_on": "2026-10-30",
+    "verification": "Source reviewed; execution not tested",
+    "reviewed_source_url": "https://raw.githubusercontent.com/meta-llama/PurpleLlama/HEAD/README.md",
+    "license_status": "Check upstream code and dataset licenses separately",
+    "setup_effort": "Moderate; a GPU is recommended (editorial estimate; varies by configuration)",
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2312.06674",
+    "code_url": "https://github.com/meta-llama/PurpleLlama",
+    "docs_url": "https://huggingface.co/meta-llama/Llama-Guard-3-8B",
+    "dataset_url": null,
+    "quickstart": null,
+    "methods": [
+      "scoring"
+    ]
+  },
+  {
+    "id": "R092",
+    "name": "CoCoNot",
+    "category": "Refusal calibration",
+    "kind": "Benchmark",
+    "level": "Beginner",
+    "focus": "Tests when models should not comply (incomplete, unsupported, or unsafe requests) and when they over-refuse.",
+    "url": "https://github.com/allenai/noncompliance",
+    "limitations": "Its noncompliance taxonomy is broader than safety; separate safety categories when reporting.",
+    "original_number": null,
+    "checked_on": "2026-10-30",
+    "verification": "Source reviewed; execution not tested",
+    "reviewed_source_url": "https://raw.githubusercontent.com/allenai/noncompliance/HEAD/README.md",
+    "license_status": "Check upstream code and dataset licenses separately",
+    "setup_effort": "Low (editorial estimate; varies by configuration)",
+    "execution_tested": false,
+    "paper_url": "https://arxiv.org/abs/2407.12043",
+    "code_url": "https://github.com/allenai/noncompliance",
+    "docs_url": null,
+    "dataset_url": "https://huggingface.co/datasets/allenai/coconot",
+    "quickstart": {
+      "language": "bash",
+      "source": "Inspect Evals",
+      "code": "pip install inspect-ai inspect-evals\n# set INSPECT_EVAL_MODEL first (see the setup guide); some evals also call a grader model\ninspect eval inspect_evals/coconot --limit 10\ninspect view   # browse the log in your web browser"
+    },
+    "methods": [
+      "harmful-requests"
+    ]
   }
 ]
